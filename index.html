@@ -10,7 +10,7 @@
     html { scroll-behavior: smooth; }
   </style>
 </head>
-<body class="min-h-screen bg-slate-950 text-slate-50">
+<body class="min-h-screen bg-slate-950 text-slate-50 text-[15px] leading-relaxed sm:text-base">
   <!-- Animated background -->
   <div class="fixed inset-0 -z-10 overflow-hidden">
     <div class="absolute -top-32 -left-24 h-80 w-80 rounded-full bg-purple-600 opacity-30 blur-3xl animate-pulse"></div>
@@ -18,9 +18,9 @@
     <div class="absolute bottom-0 left-1/2 h-72 w-72 -translate-x-1/2 rounded-full bg-emerald-500 opacity-20 blur-3xl animate-pulse"></div>
   </div>
 
-  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-10">
+  <div class="max-w-6xl mx-auto px-3 xs:px-4 sm:px-6 lg:px-8 py-4 sm:py-8 lg:py-10">
     <!-- Navbar -->
-    <nav class="flex items-center justify-between mb-8 sm:mb-10">
+    <nav class="flex items-center justify-between mb-6 sm:mb-8">
       <div class="flex items-center gap-2">
         <div class="h-8 w-8 rounded-2xl bg-slate-900/70 border border-slate-700/80 flex items-center justify-center shadow-md shadow-slate-900/60">
           <span class="bg-gradient-to-r from-sky-400 via-purple-400 to-emerald-400 bg-clip-text text-transparent text-sm font-bold">
@@ -29,12 +29,13 @@
         </div>
         <span class="hidden sm:inline text-sm text-slate-300">ML/AI Engineer</span>
       </div>
-      <div class="hidden sm:flex gap-6 text-sm text-slate-200">
+      <div class="hidden sm:flex gap-4 md:gap-6 text-xs md:text-sm text-slate-200">
         <a href="#about" class="hover:text-sky-400 transition-colors">About</a>
         <a href="#experience" class="hover:text-sky-400 transition-colors">Experience</a>
         <a href="#projects" class="hover:text-sky-400 transition-colors">Projects</a>
         <a href="#research" class="hover:text-sky-400 transition-colors">Research</a>
         <a href="#skills" class="hover:text-sky-400 transition-colors">Skills</a>
+        <a href="#future-work" class="hover:text-sky-400 transition-colors">Future</a>
       </div>
       <a href="mailto:azizashfak@gmail.com"
          class="text-xs sm:text-sm px-3 py-1.5 rounded-full bg-slate-900/60 border border-slate-700/70 hover:border-sky-400 hover:bg-slate-900/80 transition-colors">
@@ -45,13 +46,13 @@
     <!-- Hero -->
     <header id="about"
             class="mb-10 sm:mb-14 lg:mb-16 rounded-3xl bg-slate-900/60 border border-slate-800/80 backdrop-blur-xl px-4 sm:px-8 py-6 sm:py-8 lg:py-10 shadow-[0_0_60px_rgba(15,23,42,0.9)]">
-      <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6 lg:gap-10">
-        <div class="flex-1">
+      <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8 lg:gap-10">
+        <div class="flex-1 min-w-0">
           <p class="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.2em] text-slate-400 mb-3">
             <span class="inline-block h-1 w-6 rounded-full bg-gradient-to-r from-sky-400 to-purple-400"></span>
             ML / AI Engineer · Researcher
           </p>
-          <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight leading-tight">
+          <h1 class="text-[1.75rem] sm:text-4xl lg:text-5xl font-bold tracking-tight leading-tight">
             Building reliable
             <span class="bg-gradient-to-r from-sky-400 via-purple-400 to-emerald-400 bg-clip-text text-transparent">
               AI systems
@@ -99,14 +100,14 @@
         </div>
 
         <!-- Avatar -->
-        <div class="w-full max-w-xs mx-auto lg:mx-0">
+        <div class="w-full max-w-xs mx-auto lg:mx-0 flex-shrink-0">
           <div class="relative flex flex-col items-center text-center">
             <div class="relative mb-4">
               <div class="absolute -inset-1 rounded-full bg-gradient-to-tr from-sky-500 via-purple-500 to-emerald-400 opacity-60 blur-xl animate-pulse"></div>
               <img
                 src="https://avatar-placeholder.iran.liara.run/username?username=Aziz%20Ashfak"
                 alt="Aziz Ashfak portrait"
-                class="relative h-32 w-32 sm:h-36 sm:w-36 rounded-full border-4 border-slate-900 object-cover shadow-xl"
+                class="relative h-28 w-28 sm:h-36 sm:w-36 rounded-full border-4 border-slate-900 object-cover shadow-xl"
               />
             </div>
             <p class="text-sm font-semibold">Aziz Ashfak</p>
@@ -131,9 +132,9 @@
 
       <div class="grid gap-5 lg:grid-cols-2">
         <!-- ROYALX -->
-        <article class="group rounded-2xl bg-slate-900/70 border border-slate-800/80 backdrop-blur-xl p-5 transform-gpu hover:-translate-y-1 hover:scale-[1.01] hover:border-sky-400/70 hover:shadow-xl hover:shadow-sky-900/40 transition-all duration-300">
+        <article class="group rounded-2xl bg-slate-900/70 border border-slate-800/80 backdrop-blur-xl p-4 sm:p-5 transform-gpu hover:-translate-y-1 hover:scale-[1.01] hover:border-sky-400/70 hover:shadow-xl hover:shadow-sky-900/40 transition-all duration-300">
           <div class="flex items-start justify-between gap-3">
-            <div>
+            <div class="min-w-0">
               <h3 class="font-semibold text-slate-50">
                 AI Engineer · ROYALX LLC
               </h3>
@@ -141,7 +142,7 @@
                 Remote · Dhaka, Bangladesh · Feb 2025 – Sep 2025 · Full-time
               </p>
             </div>
-            <span class="text-[11px] px-2 py-0.5 rounded-full bg-sky-500/20 text-sky-300 border border-sky-500/40">
+            <span class="text-[11px] px-2 py-0.5 rounded-full bg-sky-500/20 text-sky-300 border border-sky-500/40 whitespace-nowrap">
               LLM / RAG
             </span>
           </div>
@@ -155,9 +156,9 @@
         </article>
 
         <!-- Ai Devlop -->
-        <article class="group rounded-2xl bg-slate-900/70 border border-slate-800/80 backdrop-blur-xl p-5 transform-gpu hover:-translate-y-1 hover:scale-[1.01] hover:border-emerald-400/70 hover:shadow-xl hover:shadow-emerald-900/40 transition-all duration-300">
+        <article class="group rounded-2xl bg-slate-900/70 border border-slate-800/80 backdrop-blur-xl p-4 sm:p-5 transform-gpu hover:-translate-y-1 hover:scale-[1.01] hover:border-emerald-400/70 hover:shadow-xl hover:shadow-emerald-900/40 transition-all duration-300">
           <div class="flex items-start justify-between gap-3">
-            <div>
+            <div class="min-w-0">
               <h3 class="font-semibold text-slate-50">
                 AI Tutor · Ai Devlop
               </h3>
@@ -165,7 +166,7 @@
                 Remote · Dhaka, Bangladesh · Apr 2025 – Aug 2025 · Part-time
               </p>
             </div>
-            <span class="text-[11px] px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/40">
+            <span class="text-[11px] px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 whitespace-nowrap">
               Teaching
             </span>
           </div>
@@ -191,9 +192,9 @@
         Each card includes code, live app (where available), and a run video showing the project in action.
       </p>
 
-      <div class="grid gap-5 md:grid-cols-2">
+      <div class="grid gap-5 grid-cols-1 sm:grid-cols-2">
         <!-- 1. Indian Flight Price Prediction -->
-        <article class="group rounded-2xl bg-slate-900/70 border border-slate-800/80 backdrop-blur-xl p-5 transform-gpu hover:-translate-y-1 hover:scale-[1.01] hover:border-sky-400/70 hover:shadow-xl hover:shadow-sky-900/40 transition-all duration-300">
+        <article class="group rounded-2xl bg-slate-900/70 border border-slate-800/80 backdrop-blur-xl p-4 sm:p-5 transform-gpu hover:-translate-y-1 hover:scale-[1.01] hover:border-sky-400/70 hover:shadow-xl hover:shadow-sky-900/40 transition-all duration-300">
           <p class="text-xs text-slate-400 mb-1">Regression · ML Ops</p>
           <h3 class="font-semibold text-slate-50">
             Indian Flight Price Prediction
@@ -220,7 +221,7 @@
         </article>
 
         <!-- 2. Thyroid Disease Prediction -->
-        <article class="group rounded-2xl bg-slate-900/70 border border-slate-800/80 backdrop-blur-xl p-5 transform-gpu hover:-translate-y-1 hover:scale-[1.01] hover:border-purple-400/70 hover:shadow-xl hover:shadow-purple-900/40 transition-all duration-300">
+        <article class="group rounded-2xl bg-slate-900/70 border border-slate-800/80 backdrop-blur-xl p-4 sm:p-5 transform-gpu hover:-translate-y-1 hover:scale-[1.01] hover:border-purple-400/70 hover:shadow-xl hover:shadow-purple-900/40 transition-all duration-300">
           <p class="text-xs text-slate-400 mb-1">Classification · Healthcare</p>
           <h3 class="font-semibold text-slate-50">
             Thyroid Disease Prediction
@@ -246,7 +247,7 @@
         </article>
 
         <!-- 3. Brain Tumor Detection -->
-        <article class="group rounded-2xl bg-slate-900/70 border border-slate-800/80 backdrop-blur-xl p-5 transform-gpu hover:-translate-y-1 hover:scale-[1.01] hover:border-emerald-400/70 hover:shadow-xl hover:shadow-emerald-900/40 transition-all duration-300">
+        <article class="group rounded-2xl bg-slate-900/70 border border-slate-800/80 backdrop-blur-xl p-4 sm:p-5 transform-gpu hover:-translate-y-1 hover:scale-[1.01] hover:border-emerald-400/70 hover:shadow-xl hover:shadow-emerald-900/40 transition-all duration-300">
           <p class="text-xs text-slate-400 mb-1">Computer Vision</p>
           <h3 class="font-semibold text-slate-50">
             Brain Tumor Detection
@@ -272,7 +273,7 @@
         </article>
 
         <!-- 4. Multimodal Research Paper Analyst -->
-        <article class="group rounded-2xl bg-slate-900/70 border border-slate-800/80 backdrop-blur-xl p-5 transform-gpu hover:-translate-y-1 hover:scale-[1.01] hover:border-pink-400/70 hover:shadow-xl hover:shadow-pink-900/40 transition-all duration-300">
+        <article class="group rounded-2xl bg-slate-900/70 border border-slate-800/80 backdrop-blur-xl p-4 sm:p-5 transform-gpu hover:-translate-y-1 hover:scale-[1.01] hover:border-pink-400/70 hover:shadow-xl hover:shadow-pink-900/40 transition-all duration-300">
           <p class="text-xs text-slate-400 mb-1">GenAI · Multimodal</p>
           <h3 class="font-semibold text-slate-50">
             Multimodal Research Paper Analyst
@@ -298,7 +299,7 @@
         </article>
 
         <!-- 5. QnA RAG Bot -->
-        <article class="group rounded-2xl bg-slate-900/70 border border-slate-800/80 backdrop-blur-xl p-5 transform-gpu hover:-translate-y-1 hover:scale-[1.01] hover:border-orange-400/70 hover:shadow-xl hover:shadow-orange-900/40 transition-all duration-300">
+        <article class="group rounded-2xl bg-slate-900/70 border border-slate-800/80 backdrop-blur-xl p-4 sm:p-5 transform-gpu hover:-translate-y-1 hover:scale-[1.01] hover:border-orange-400/70 hover:shadow-xl hover:shadow-orange-900/40 transition-all duration-300">
           <p class="text-xs text-slate-400 mb-1">GenAI · RAG</p>
           <h3 class="font-semibold text-slate-50">
             QnA RAG Bot for PDFs
@@ -324,7 +325,7 @@
         </article>
 
         <!-- 6. Face Mask Detection -->
-        <article class="group rounded-2xl bg-slate-900/70 border border-slate-800/80 backdrop-blur-xl p-5 transform-gpu hover:-translate-y-1 hover:scale-[1.01] hover:border-lime-400/70 hover:shadow-xl hover:shadow-lime-900/40 transition-all duration-300">
+        <article class="group rounded-2xl bg-slate-900/70 border border-slate-800/80 backdrop-blur-xl p-4 sm:p-5 transform-gpu hover:-translate-y-1 hover:scale-[1.01] hover:border-lime-400/70 hover:shadow-xl hover:shadow-lime-900/40 transition-all duration-300">
           <p class="text-xs text-slate-400 mb-1">Computer Vision · Real-time</p>
           <h3 class="font-semibold text-slate-50">
             Face Mask Detection
@@ -360,7 +361,7 @@
         <div class="h-px flex-1 ml-4 bg-gradient-to-r from-slate-600 via-slate-700 to-transparent"></div>
       </div>
 
-      <div class="grid gap-4 sm:gap-5 md:grid-cols-3 text-sm text-slate-200">
+      <div class="grid gap-4 sm:gap-5 grid-cols-1 md:grid-cols-3 text-sm text-slate-200">
         <article class="rounded-2xl bg-slate-900/70 border border-slate-800/80 backdrop-blur-xl p-4">
           <h3 class="font-semibold text-slate-50 mb-1">
             U-Net for Human Segmentation
@@ -399,7 +400,7 @@
       </div>
     </section>
 
-    <!-- Skills -->
+    <!-- Skills (eye-catching layout) -->
     <section id="skills" class="mb-10 sm:mb-12">
       <div class="flex items-center justify-between mb-4">
         <h2 class="text-xl sm:text-2xl font-semibold">
@@ -408,34 +409,162 @@
         <div class="h-px flex-1 ml-4 bg-gradient-to-r from-slate-600 via-slate-700 to-transparent"></div>
       </div>
 
+      <div class="grid gap-4 lg:grid-cols-3 text-sm text-slate-200">
+        <!-- Core ML/AI -->
+        <article class="rounded-2xl bg-slate-900/70 border border-slate-800/80 backdrop-blur-xl p-4 sm:p-5">
+          <p class="text-xs uppercase tracking-[0.18em] text-slate-400 mb-2">Core ML / AI</p>
+          <p class="font-semibold text-slate-50 mb-2">Languages & ML/DL</p>
+          <div class="flex flex-wrap gap-2 text-[11px]">
+            <span class="px-2 py-1 rounded-full bg-slate-800 border border-slate-700">Python</span>
+            <span class="px-2 py-1 rounded-full bg-slate-800 border border-slate-700">R</span>
+            <span class="px-2 py-1 rounded-full bg-slate-800 border border-slate-700">PyTorch</span>
+            <span class="px-2 py-1 rounded-full bg-slate-800 border border-slate-700">TensorFlow</span>
+            <span class="px-2 py-1 rounded-full bg-slate-800 border border-slate-700">Keras</span>
+            <span class="px-2 py-1 rounded-full bg-slate-800 border border-slate-700">scikit-learn</span>
+            <span class="px-2 py-1 rounded-full bg-slate-800 border border-slate-700">OpenCV</span>
+          </div>
+        </article>
+
+        <!-- GenAI & RAG -->
+        <article class="rounded-2xl bg-slate-900/70 border border-slate-800/80 backdrop-blur-xl p-4 sm:p-5">
+          <p class="text-xs uppercase tracking-[0.18em] text-slate-400 mb-2">GenAI · LLMs · RAG</p>
+          <p class="font-semibold text-slate-50 mb-2">LLM & retrieval stack</p>
+          <div class="flex flex-wrap gap-2 text-[11px]">
+            <span class="px-2 py-1 rounded-full bg-slate-800 border border-slate-700">OpenAI API</span>
+            <span class="px-2 py-1 rounded-full bg-slate-800 border border-slate-700">Hugging Face</span>
+            <span class="px-2 py-1 rounded-full bg-slate-800 border border-slate-700">Groq</span>
+            <span class="px-2 py-1 rounded-full bg-slate-800 border border-slate-700">LangChain</span>
+            <span class="px-2 py-1 rounded-full bg-slate-800 border border-slate-700">LangGraph</span>
+            <span class="px-2 py-1 rounded-full bg-slate-800 border border-slate-700">CrewAI</span>
+            <span class="px-2 py-1 rounded-full bg-slate-800 border border-slate-700">n8n</span>
+            <span class="px-2 py-1 rounded-full bg-slate-800 border border-slate-700">FAISS</span>
+            <span class="px-2 py-1 rounded-full bg-slate-800 border border-slate-700">ChromaDB</span>
+            <span class="px-2 py-1 rounded-full bg-slate-800 border border-slate-700">Pinecone</span>
+          </div>
+        </article>
+
+        <!-- Deployment & Data -->
+        <article class="rounded-2xl bg-slate-900/70 border border-slate-800/80 backdrop-blur-xl p-4 sm:p-5">
+          <p class="text-xs uppercase tracking-[0.18em] text-slate-400 mb-2">Deployment · Data</p>
+          <p class="font-semibold text-slate-50 mb-2">MLOps & analytics</p>
+          <div class="flex flex-wrap gap-2 text-[11px] mb-2">
+            <span class="px-2 py-1 rounded-full bg-slate-800 border border-slate-700">FastAPI</span>
+            <span class="px-2 py-1 rounded-full bg-slate-800 border border-slate-700">Flask</span>
+            <span class="px-2 py-1 rounded-full bg-slate-800 border border-slate-700">Streamlit</span>
+            <span class="px-2 py-1 rounded-full bg-slate-800 border border-slate-700">Gradio</span>
+            <span class="px-2 py-1 rounded-full bg-slate-800 border border-slate-700">ONNX</span>
+            <span class="px-2 py-1 rounded-full bg-slate-800 border border-slate-700">Git</span>
+            <span class="px-2 py-1 rounded-full bg-slate-800 border border-slate-700">GitHub Actions</span>
+            <span class="px-2 py-1 rounded-full bg-slate-800 border border-slate-700">Render</span>
+            <span class="px-2 py-1 rounded-full bg-slate-800 border border-slate-700">Kaggle</span>
+            <span class="px-2 py-1 rounded-full bg-slate-800 border border-slate-700">Google Colab</span>
+          </div>
+          <div class="flex flex-wrap gap-2 text-[11px]">
+            <span class="px-2 py-1 rounded-full bg-slate-800 border border-slate-700">Pandas</span>
+            <span class="px-2 py-1 rounded-full bg-slate-800 border border-slate-700">NumPy</span>
+            <span class="px-2 py-1 rounded-full bg-slate-800 border border-slate-700">Matplotlib</span>
+            <span class="px-2 py-1 rounded-full bg-slate-800 border border-slate-700">Seaborn</span>
+            <span class="px-2 py-1 rounded-full bg-slate-800 border border-slate-700">Plotly</span>
+          </div>
+        </article>
+      </div>
+
+      <!-- DSA & Problem Solving highlight -->
+      <div class="mt-6 rounded-2xl bg-slate-900/70 border border-slate-800/80 backdrop-blur-xl p-4 sm:p-5 text-sm text-slate-200">
+        <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+          <p class="text-xs uppercase tracking-[0.18em] text-slate-400">DSA &amp; Problem solving</p>
+          <span class="text-[11px] px-2 py-0.5 rounded-full bg-sky-500/15 border border-sky-500/40 text-sky-300">
+            Recently completed DSA course
+          </span>
+        </div>
+        <p class="mb-2">
+          Completed a structured Data Structures &amp; Algorithms course and started regular LeetCode practice to strengthen core problem‑solving skills (arrays, strings, hash maps, trees, graphs, recursion, sorting/searching, basic DP).
+        </p>
+        <p class="text-xs text-slate-400">
+          LeetCode profile: <a href="https://leetcode.com/YOUR_LEETCODE_USERNAME" class="text-sky-300 hover:text-sky-200">leetcode.com/YOUR_LEETCODE_USERNAME</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- Future Work Interests -->
+    <section id="future-work" class="mb-10 sm:mb-12">
+      <div class="flex items-center justify-between mb-4">
+        <h2 class="text-xl sm:text-2xl font-semibold">
+          Future work interests
+        </h2>
+        <div class="h-px flex-1 ml-4 bg-gradient-to-r from-slate-600 via-slate-700 to-transparent"></div>
+      </div>
+
       <div class="grid gap-4 md:grid-cols-2 text-sm text-slate-200">
-        <div class="rounded-2xl bg-slate-900/70 border border-slate-800/80 backdrop-blur-xl p-4">
-          <p class="font-semibold text-slate-50 mb-1">Languages</p>
-          <p>Python, R</p>
-          <p class="font-semibold text-slate-50 mt-3 mb-1">ML / DL</p>
-          <p>PyTorch, TensorFlow, Keras, scikit-learn, OpenCV</p>
-        </div>
+        <!-- Interest 1 -->
+        <article class="rounded-2xl bg-slate-900/70 border border-slate-800/80 backdrop-blur-xl p-4">
+          <h3 class="font-semibold text-slate-50 mb-1">
+            Interest #1 title
+          </h3>
+          <p class="text-xs text-slate-400 mb-1">
+            Short focus area (e.g., Agentic RAG · Evaluation)
+          </p>
+          <p>
+            2–3 line description of what you want to explore next, why it matters, and what kind of problems you want to solve.
+          </p>
+        </article>
 
-        <div class="rounded-2xl bg-slate-900/70 border border-slate-800/80 backdrop-blur-xl p-4">
-          <p class="font-semibold text-slate-50 mb-1">GenAI &amp; LLMs</p>
-          <p>OpenAI API, Hugging Face, Groq, LangChain, LangGraph, CrewAI, n8n</p>
-          <p class="font-semibold text-slate-50 mt-3 mb-1">Vector DBs</p>
-          <p>FAISS, ChromaDB, Pinecone</p>
-        </div>
+        <!-- Interest 2 -->
+        <article class="rounded-2xl bg-slate-900/70 border border-slate-800/80 backdrop-blur-xl p-4">
+          <h3 class="font-semibold text-slate-50 mb-1">
+            Interest #2 title
+          </h3>
+          <p class="text-xs text-slate-400 mb-1">
+            Short focus area (e.g., Responsible AI · ML for healthcare)
+          </p>
+          <p>
+            Another 2–3 line description about a second future direction, such as domains, techniques, or research questions you care about.
+          </p>
+        </article>
+      </div>
+    </section>
 
-        <div class="rounded-2xl bg-slate-900/70 border border-slate-800/80 backdrop-blur-xl p-4">
-          <p class="font-semibold text-slate-50 mb-1">Deployment</p>
-          <p>FastAPI, Flask, Streamlit, Gradio, ONNX</p>
-          <p class="font-semibold text-slate-50 mt-3 mb-1">DevOps / Cloud</p>
-          <p>Git, GitHub Actions, Render, Kaggle, Google Colab</p>
-        </div>
+    <!-- Future Project Ideas -->
+    <section id="future-projects" class="mb-10 sm:mb-12">
+      <div class="flex items-center justify-between mb-4">
+        <h2 class="text-xl sm:text-2xl font-semibold">
+          Future project ideas
+        </h2>
+        <div class="h-px flex-1 ml-4 bg-gradient-to-r from-slate-600 via-slate-700 to-transparent"></div>
+      </div>
 
-        <div class="rounded-2xl bg-slate-900/70 border border-slate-800/80 backdrop-blur-xl p-4">
-          <p class="font-semibold text-slate-50 mb-1">Data &amp; Analytics</p>
-          <p>Pandas, NumPy, Matplotlib, Seaborn, Plotly</p>
-          <p class="font-semibold text-slate-50 mt-3 mb-1">Automation &amp; RAG</p>
-          <p>OCR, retrieval, RAG, Agentic RAG, AI agents, multimodal pipelines</p>
-        </div>
+      <div class="grid gap-4 md:grid-cols-2 text-sm text-slate-200">
+        <!-- Future project 1 -->
+        <article class="rounded-2xl bg-slate-900/70 border border-slate-800/80 backdrop-blur-xl p-4">
+          <p class="text-xs text-slate-400 mb-1">
+            Idea · Not started yet
+          </p>
+          <h3 class="font-semibold text-slate-50 mb-1">
+            Future Project #1
+          </h3>
+          <p class="mb-2">
+            One-paragraph idea: what the project will do, who it helps, and what AI/ML techniques you plan to use.
+          </p>
+          <p class="text-xs text-slate-400">
+            Planned stack: fill in tools (e.g., Llama 3, LangGraph, FastAPI, PostgreSQL, etc.).
+          </p>
+        </article>
+
+        <!-- Future project 2 -->
+        <article class="rounded-2xl bg-slate-900/70 border border-slate-800/80 backdrop-blur-xl p-4">
+          <p class="text-xs text-slate-400 mb-1">
+            Idea · Not started yet
+          </p>
+          <h3 class="font-semibold text-slate-50 mb-1">
+            Future Project #2
+          </h3>
+          <p class="mb-2">
+            Another short idea you might build in the next 3–6 months, with a focus on real users or a research question.
+          </p>
+          <p class="text-xs text-slate-400">
+            Planned stack: your expected libraries, models, and deployment approach.
+          </p>
+        </article>
       </div>
     </section>
 
