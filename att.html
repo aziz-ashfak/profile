@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Aziz Ashfak | ML/AI Engineer</title>
+  <meta name="description" content="Portfolio of Aziz Ashfak — ML/AI Engineer specializing in LLMs, RAG, and computer vision." />
+  <meta name="keywords" content="Aziz Ashfak, ML Engineer, AI, LLM, RAG, Computer Vision, Portfolio" />
+  <meta name="author" content="Aziz Ashfak" />
+  <meta name="color-scheme" content="dark light">
+
+  <!-- Favicon (inline SVG) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' x2='1'%3E%3Cstop offset='0' stop-color='%2338bdf8'/%3E%3Cstop offset='0.5' stop-color='%23a78bfa'/%3E%3Cstop offset='1' stop-color='%2334d399'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ccircle cx='32' cy='32' r='30' fill='%230f172a'/%3E%3Cpath d='M18 40c8 6 20 6 28 0' stroke='url(%23g)' stroke-width='3' fill='none'/%3E%3Ccircle cx='24' cy='26' r='3.5' fill='%23a78bfa'/%3E%3Ccircle cx='40' cy='26' r='3.5' fill='%2334d399'/%3E%3C/svg%3E" />
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          screens: { xs: '420px' },
+          fontFamily: { inter: ['Inter', 'system-ui', 'Segoe UI', 'Helvetica', 'Arial', 'sans-serif'] },
+          keyframes: {
+            floaty: { '0%': { transform: 'translateY(0)' }, '50%': { transform: 'translateY(-6px)' }, '100%': { transform: 'translateY(0)' } }
+          },
+          animation: { floaty: 'floaty 6s ease-in-out infinite' }
+        }
+      }
+    };
+  </script>
+
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <style>
+    html { scroll-behavior: smooth; }
+    ::selection { background: #0ea5e9; color: #0b1220; }
+    ::-webkit-scrollbar { width: 10px; height: 10px; }
+    ::-webkit-scrollbar-thumb { background: #1f2937; border-radius: 8px; }
+    ::-webkit-scrollbar-track { background: #0b1220; }
+  </style>
+</head>
+<body class="min-h-screen bg-slate-950 text-slate-50 text-[15px] leading-relaxed sm:text-base font-inter">
+  <!-- Ambient gradients -->
+  <div class="fixed inset-0 -z-10 overflow-hidden">
+    <div class="absolute -top-40 -left-24 h-96 w-96 rounded-full bg-purple-600 opacity-25 blur-3xl animate-pulse"></div>
+    <div class="absolute top-20 -right-40 h-[28rem] w-[28rem] rounded-full bg-sky-500 opacity-20 blur-3xl animate-pulse"></div>
+    <div class="absolute bottom-0 left-1/3 h-80 w-80 rounded-full bg-emerald-500 opacity-20 blur-3xl animate-pulse"></div>
+  </div>
+
+  <!-- Navbar -->
+  <header class="sticky top-3 z-40">
+    <nav class="mx-auto max-w-6xl px-3 xs:px-4 sm:px-6 lg:px-8">
+      <div class="rounded-2xl bg-slate-900/60 border border-slate-800/70 backdrop-blur-xl shadow-lg shadow-slate-900/40">
+        <div class="flex items-center justify-between px-3 py-2 sm:px-4 sm:py-2.5">
+          <a href="#about" class="flex items-center gap-3">
+            <div class="h-9 w-9 rounded-2xl bg-slate-900/70 border border-slate-700/80 flex items-center justify-center shadow-md">
+              <span class="bg-gradient-to-r from-sky-400 via-purple-400 to-emerald-400 bg-clip-text text-transparent text-sm font-bold">Aziz</span>
+            </div>
+            <span class="hidden sm:inline text-sm text-slate-300">ML/AI Engineer</span>
+          </a>
+
+          <div class="hidden md:flex gap-4 lg:gap-6 text-xs lg:text-sm text-slate-200">
+            <a href="#experience" class="hover:text-sky-400 transition-colors">Experience</a>
+            <a href="#projects" class="hover:text-sky-400 transition-colors">Projects</a>
+            <a href="#research" class="hover:text-sky-400 transition-colors">Research</a>
+            <a href="#skills" class="hover:text-sky-400 transition-colors">Skills</a>
+            <a href="#achievements" class="hover:text-sky-400 transition-colors">Achievements</a>
+            <a href="#blog" class="hover:text-sky-400 transition-colors">Blog</a>
+            <a href="#contact" class="hover:text-sky-400 transition-colors">Contact</a>
+          </div>
+
+          <div class="flex items-center gap-2">
+            <button id="themeToggle" aria-label="Toggle theme"
+              class="text-xs sm:text-sm px-3 py-1.5 rounded-full bg-slate-900/60 border border-slate-700/70 hover:border-purple-400 hover:bg-slate-900/80 transition-colors">
+              Theme
+            </button>
+            <a href="mailto:azizashfak@gmail.com"
+               class="hidden xs:inline text-xs sm:text-sm px-3 py-1.5 rounded-full bg-gradient-to-r from-sky-500 to-purple-500 text-white hover:from-sky-400 hover:to-purple-400 transition-colors">
+              Contact
+            </a>
+            <button id="menuBtn" class="md:hidden inline-flex items-center justify-center h-9 w-9 rounded-xl border border-slate-700/70 bg-slate-900/50 hover:bg-slate-800/60" aria-expanded="false" aria-controls="mobileMenu">
+              <span class="sr-only">Open menu</span>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-200" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div id="mobileMenu" class="hidden md:hidden px-3 pb-3" aria-hidden="true">
+          <div class="grid grid-cols-2 gap-2 text-sm">
+            <a href="#experience" class="rounded-lg px-3 py-2 bg-slate-800/60 border border-slate-700 hover:bg-slate-800">Experience</a>
+            <a href="#projects" class="rounded-lg px-3 py-2 bg-slate-800/60 border border-slate-700 hover:bg-slate-800">Projects</a>
+            <a href="#research" class="rounded-lg px-3 py-2 bg-slate-800/60 border border-slate-700 hover:bg-slate-800">Research</a>
+            <a href="#skills" class="rounded-lg px-3 py-2 bg-slate-800/60 border border-slate-700 hover:bg-slate-800">Skills</a>
+            <a href="#achievements" class="rounded-lg px-3 py-2 bg-slate-800/60 border border-slate-700 hover:bg-slate-800">Achievements</a>
+            <a href="#blog" class="rounded-lg px-3 py-2 bg-slate-800/60 border border-slate-700 hover:bg-slate-800">Blog</a>
+            <a href="#contact" class="rounded-lg px-3 py-2 bg-slate-800/60 border border-slate-700 hover:bg-slate-800 col-span-2">Contact</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main content -->
+  <main class="max-w-6xl mx-auto px-3 xs:px-4 sm:px-6 lg:px-8 py-6 sm:py-10">
+    <!-- Hero / About -->
+    <section id="about" class="mb-10 sm:mb-14 lg:mb-16 rounded-3xl bg-slate-900/60 border border-slate-800/80 backdrop-blur-xl px-4 sm:px-8 py-6 sm:py-8 lg:py-10 shadow-[0_0_60px_rgba(15,23,42,0.9)]" data-aos="fade-up" data-aos-duration="800">
+      <div class="grid lg:grid-cols-[1fr,320px] gap-8 lg:gap-10 items-center">
+        <div>
+          <p class="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.2em] text-slate-400 mb-3">
+            <span class="inline-block h-1 w-6 rounded-full bg-gradient-to-r from-sky-400 to-purple-400"></span>
+            ML / AI Engineer · Researcher
+          </p>
+
+          <h1 class="text-[1.85rem] sm:text-4xl lg:text-5xl font-bold tracking-tight leading-tight">
+            Building reliable
+            <span class="bg-gradient-to-r from-sky-400 via-purple-400 to-emerald-400 bg-clip-text text-transparent">AI systems</span>
+            for real‑world impact.
+          </h1>
+
+          <p class="mt-3 sm:mt-4 text-sm sm:text-base text-slate-300 max-w-2xl">
+            Specializing in LLMs, RAG, and computer vision with a statistics backbone. I ship production‑grade models and research tools people actually use.
+          </p>
+
+          <div class="mt-5 flex flex-wrap items-center gap-3 text-xs sm:text-sm">
+            <a href="#projects" class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-sky-500 to-purple-500 text-slate-50 font-medium shadow-lg hover:scale-[1.03] transition-transform duration-200">
+              View projects <span class="animate-bounce">↓</span>
+            </a>
+            <a href="mailto:azizashfak@gmail.com" class="px-4 py-2 rounded-full border border-slate-500/70 text-slate-200 hover:border-sky-400 bg-slate-900/60 transition-colors">
+              Hire / collaborate
+            </a>
+            <a href="Aziz_Ashfak_Resume.pdf" class="px-4 py-2 rounded-full border border-purple-500/60 text-slate-100 hover:border-emerald-400 bg-slate-900/60 transition-colors">
+              Download resume
+            </a>
+          </div>
+
+          <div class="mt-5 flex flex-wrap gap-x-4 gap-y-1 text-xs text-slate-300">
+            <p class="mr-4">Noakhali, Bangladesh · B.Sc. in Statistics (NSTU, 2022–2026)</p>
+            <p><span class="font-semibold text-slate-200">Phone:</span> 01730644634</p>
+            <p><span class="font-semibold text-slate-200">Email:</span> <a href="mailto:azizashfak@gmail.com" class="text-sky-300 hover:underline">azizashfak@gmail.com</a></p>
+          </div>
+
+          <div class="mt-4 flex flex-wrap gap-4 text-sm">
+            <a href="https://github.com/azizashfak" class="text-slate-300 hover:text-sky-300">GitHub ↗</a>
+            <a href="https://www.linkedin.com/in/azizashfak" class="text-slate-300 hover:text-sky-300">LinkedIn ↗</a>
+            <a href="https://www.kaggle.com/azizashfak" class="text-slate-300 hover:text-sky-300">Kaggle ↗</a>
+            <a href="https://leetcode.com/azizashfak" class="text-slate-300 hover:text-sky-300">LeetCode ↗</a>
+          </div>
+        </div>
+
+        <!-- Responsive round avatar -->
+        <div class="w-full max-w-[320px] mx-auto lg:mx-0" data-aos="zoom-in" data-aos-duration="800">
+          <div class="relative flex flex-col items-center text-center">
+            <!-- Decorative glow -->
+            <div class="absolute -inset-1 rounded-full pointer-events-none opacity-60 blur-xl" style="background:linear-gradient(135deg,#38bdf8,#a78bfa,#34d399); transform:translateZ(0);"></div>
+
+            <!-- Circular image wrapper -->
+            <div class="relative w-[140px] sm:w-[176px] md:w-[224px] rounded-full overflow-hidden border-4 border-slate-900 shadow-xl">
+              <picture>
+                <source srcset="images/prof_1_n@3x.jpg 3x, images/prof_1_n@2x.jpg 2x, images/prof_1_n.jpg 1x" />
+                <img
+                  src="images/prof_1_n.jpg"
+                  alt="Portrait of Aziz Ashfak"
+                  class="block w-full h-full object-cover rounded-full"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </picture>
+            </div>
+
+            <p class="mt-4 text-sm font-semibold">Aziz Ashfak</p>
+            <p class="text-xs text-slate-400 mt-1">ML/AI Engineer · LLMs · RAG · CV</p>
+
+            <div class="mt-3 inline-flex items-center gap-2 text-[11px] text-emerald-300 bg-emerald-500/10 px-3 py-1 rounded-full border border-emerald-500/40 animate-floaty">
+              <span class="h-1.5 w-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+              Open to roles & collaborations
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stats row below about section -->
+      <div class="mt-8 max-w-3xl mx-auto grid grid-cols-2 sm:grid-cols-4 gap-3" data-aos="fade-up" data-aos-duration="700">
+        <div class="rounded-xl bg-slate-800/60 border border-slate-700/70 p-4 text-center">
+          <p class="text-2xl sm:text-3xl font-bold text-sky-300">100+</p>
+          <p class="text-xs text-slate-400 mt-1">Students mentored</p>
+        </div>
+        <div class="rounded-xl bg-slate-800/60 border border-slate-700/70 p-4 text-center">
+          <p class="text-2xl sm:text-3xl font-bold text-purple-300">10+</p>
+          <p class="text-xs text-slate-400 mt-1">Deployed apps</p>
+        </div>
+        <div class="rounded-xl bg-slate-800/60 border border-slate-700/70 p-4 text-center">
+          <p class="text-2xl sm:text-3xl font-bold text-emerald-300">5</p>
+          <p class="text-xs text-slate-400 mt-1">RAG systems</p>
+        </div>
+        <div class="rounded-xl bg-slate-800/60 border border-slate-700/70 p-4 text-center">
+          <p class="text-2xl sm:text-3xl font-bold text-orange-300">3</p>
+          <p class="text-xs text-slate-400 mt-1">CV pipelines</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="mb-10 sm:mb-14" data-aos="fade-up" data-aos-duration="800">
+      <div class="flex items-center justify-between mb-4">
+        <h2 class="text-xl sm:text-2xl font-semibold">Experience</h2>
+        <div class="h-px flex-1 ml-4 bg-gradient-to-r from-slate-600 via-slate-700 to-transparent"></div>
+      </div>
+
+      <div class="grid gap-5 lg:grid-cols-2">
+        <article class="group rounded-2xl bg-slate-900/70 border border-slate-800/80 backdrop-blur-xl p-4 sm:p-5 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
+          <div class="flex items-start justify-between gap-3">
+            <div class="min-w-0">
+              <h3 class="font-semibold text-slate-50">AI Engineer · ROYALX LLC</h3>
+              <p class="text-xs text-slate-400 mt-1">Remote · Dhaka, Bangladesh · Feb 2025 – Sep 2025 · Full-time</p>
+            </div>
+            <span class="text-[11px] px-2 py-0.5 rounded-full bg-sky-500/20 text-sky-300 border border-sky-500/40 whitespace-nowrap">LLM / RAG</span>
+          </div>
+          <ul class="mt-3 text-sm text-slate-200 space-y-1.5">
+            <li>Built LLM apps (OpenAI, Groq, HF) with LangChain/LlamaIndex for generation, summarization, and chatbots.</li>
+            <li>Designed multimodal RAG pipelines to handle text + figures with improved retrieval accuracy.</li>
+            <li>Fine‑tuned transformers for QA, classification, and document understanding tasks.</li>
+            <li>Developed agents for reasoning‑heavy, multi‑step workflows and automation.</li>
+            <li>Deployed production APIs/UIs with FastAPI, Flask, Streamlit, and CI/CD.</li>
+          </ul>
+        </article>
+
+        <article class="group rounded-2xl bg-slate-900/70 border border-slate-800/80 backdrop-blur-xl p-4 sm:p-5 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
+          <div class="flex items-start justify-between gap-3">
+            <div class="min-w-0">
+              <h3 class="font-semibold text-slate-50">AI Tutor · Ai Devlop</h3>
+              <p class="text-xs text-slate-400 mt-1">Remote · Dhaka, Bangladesh · Apr 2025 – Aug 2025 · Part-time</p>
+            </div>
+            <span class="text-[11px] px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 whitespace-nowrap">Teaching</span>
+          </div>
+          <ul class="mt-3 text-sm text-slate-200 space-y-1.5">
+            <li>Taught 100+ students statistics, EDA, ML, and deep learning through practical labs.</li>
+            <li>Created structured curricula, capstones, and personalized mentoring.</li>
+            <li>Guided students to build and deploy end‑to‑end ML solutions.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- Projects (kept concise) -->
+    <section id="projects" class="mb-10 sm:mb-14" data-aos="fade-up" data-aos-duration="800">
+      <div class="flex items-center justify-between mb-4">
+        <h2 class="text-xl sm:text-2xl font-semibold">Featured projects</h2>
+        <div class="h-px flex-1 ml-4 bg-gradient-to-r from-slate-600 via-slate-700 to-transparent"></div>
+      </div>
+
+      <p class="text-xs text-slate-400 mb-4">Each card includes code, live app, and a demo video.</p>
+
+      <div class="grid gap-5 grid-cols-1 sm:grid-cols-2 xl:grid-cols-3">
+        <!-- Project cards (examples) -->
+        <article class="group rounded-2xl bg-slate-900/70 border border-slate-800/80 p-4 sm:p-5 backdrop-blur-xl transition-all hover:-translate-y-1 hover:shadow-xl">
+          <div class="flex items-center justify-between">
+            <p class="text-xs text-slate-400 mb-1">Regression · MLOps</p>
+            <span class="text-[11px] px-2 py-0.5 rounded-full bg-sky-500/20 text-sky-300 border border-sky-500/40">Render</span>
+          </div>
+          <h3 class="font-semibold text-slate-50">Indian Flight Price Prediction</h3>
+          <p class="text-xs text-slate-400 mt-1">BaggingRegressor · 300k+ rows</p>
+          <p class="mt-2 text-sm text-slate-200">High‑accuracy price model (≈ 99.7%) with feature engineering, preprocessing, and CI/CD deployment.</p>
+          <div class="mt-3 flex flex-wrap gap-2 text-[11px]">
+            <span class="px-2 py-1 rounded-full bg-slate-800/80 border border-slate-700 text-slate-200">scikit‑learn</span>
+            <span class="px-2 py-1 rounded-full bg-slate-800/80 border border-slate-700 text-slate-200">Pandas</span>
+            <span class="px-2 py-1 rounded-full bg-slate-800/80 border border-slate-700 text-slate-200">Render</span>
+          </div>
+          <div class="mt-3 flex flex-wrap gap-3 text-xs">
+            <a href="https://github.com/azizashfak/flight-price" class="text-sky-300 hover:text-sky-200">Code ↗</a>
+            <a href="https://example.com/flight-app" class="text-sky-300 hover:text-sky-200">Live ↗</a>
+            <a href="https://drive.google.com/file/d/FLIGHT_VIDEO_ID/view?usp=sharing" class="inline-flex items-center gap-1 text-emerald-300 hover:text-emerald-200">▶ Demo</a>
+          </div>
+        </article>
+
+        <!-- Additional project cards omitted for brevity; keep same pattern -->
+      </div>
+    </section>
+
+    <!-- Contact (Formspree form included) -->
+    <section id="contact" class="mb-10 sm:mb-12" data-aos="fade-up" data-aos-duration="800">
+      <div class="flex items-center justify-between mb-4">
+        <h2 class="text-xl sm:text-2xl font-semibold">Contact</h2>
+        <div class="h-px flex-1 ml-4 bg-gradient-to-r from-slate-600 via-slate-700 to-transparent"></div>
+      </div>
+
+      <div class="grid gap-6 md:grid-cols-2">
+        <div class="rounded-2xl bg-slate-900/70 border border-slate-800/80 p-5">
+          <p class="text-sm text-slate-200 mb-2">Prefer email?</p>
+          <a href="mailto:azizashfak@gmail.com" class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-sky-500 to-purple-500 text-white font-medium shadow-lg hover:from-sky-400 hover:to-purple-400 transition-all">Email Aziz</a>
+          <p class="mt-3 text-xs text-slate-400">Phone: 01730644634 · Noakhali, Bangladesh</p>
+        </div>
+
+        <!-- Formspree form: replace {form_id} with your Formspree ID -->
+        <form action="https://formspree.io/f/{form_id}" method="post" class="rounded-2xl bg-slate-900/70 border border-slate-800/80 p-5 space-y-3">
+          <div>
+            <label for="email" class="block text-xs text-slate-400 mb-1">Your Email</label>
+            <input id="email" name="Email" type="email" required class="w-full px-3 py-2 rounded-lg bg-slate-800/80 border border-slate-700 text-slate-200 focus:outline-none focus:ring-2 focus:ring-sky-500" />
+          </div>
+          <button type="submit" class="px-4 py-2 rounded-full bg-emerald-600 text-white hover:bg-emerald-500 transition-colors">Submit</button>
+          <p class="text-[11px] text-slate-400">Replace <code>{form_id}</code> with your Formspree ID.</p>
+        </form>
+      </div>
+    </section>
+
+    <!-- CTA ribbon -->
+    <section class="mb-10 sm:mb-12" data-aos="fade-up" data-aos-duration="800">
+      <div class="rounded-2xl border border-slate-800/80 bg-gradient-to-r from-slate-900/70 via-slate-900/60 to-slate-900/70 p-5 flex flex-col sm:flex-row items-center justify-between gap-3">
+        <p class="text-sm text-slate-200">Open to roles & collaborations in LLMs, RAG, and computer vision.</p>
+        <div class="flex gap-2">
+          <a href="#projects" class="px-4 py-2 rounded-full bg-sky-600 text-white hover:bg-sky-500 transition">Explore projects</a>
+          <a href="Aziz_Ashfak_Resume.pdf" class="px-4 py-2 rounded-full bg-purple-600 text-white hover:bg-purple-500 transition">Download resume</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="mx-auto max-w-6xl px-3 xs:px-4 sm:px-6 lg:px-8 border-t border-slate-800/80 pt-4 mt-2 mb-6 text-xs text-slate-400">
+    <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+      <p>&copy; <span id="year"></span> Aziz Ashfak. All rights reserved.</p>
+      <p>Built with HTML + Tailwind CSS. Deployed on GitHub Pages.</p>
+    </div>
+    <button id="backToTop" class="fixed bottom-5 right-5 hidden px-3 py-2 rounded-full bg-slate-900/70 border border-slate-700/70 text-slate-200 shadow-md hover:bg-slate-800/70 transition" aria-label="Back to top">↑</button>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    // AOS init (respect reduced motion)
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (!reduceMotion) AOS.init({ once: true, offset: 40, duration: 700, easing: 'ease-out-cubic' });
+
+    // Theme toggle with persistence
+    const themeToggle = document.getElementById('themeToggle');
+    const root = document.documentElement;
+    function setTheme(theme) {
+      if (theme === 'dark') root.classList.add('dark'); else root.classList.remove('dark');
+      localStorage.setItem('theme', theme);
+    }
+    const savedTheme = localStorage.getItem('theme') || 'dark';
+    setTheme(savedTheme);
+    themeToggle.addEventListener('click', () => setTheme(root.classList.contains('dark') ? 'light' : 'dark'));
+
+    // Mobile menu toggle
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    menuBtn?.addEventListener('click', () => {
+      const open = mobileMenu.classList.toggle('hidden');
+      menuBtn.setAttribute('aria-expanded', String(!open));
+      mobileMenu.setAttribute('aria-hidden', String(open));
+    });
+
+    // Back to top
+    const backToTop = document.getElementById('backToTop');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 600) backToTop.classList.remove('hidden'); else backToTop.classList.add('hidden');
+    });
+    backToTop?.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+    // Footer year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
