@@ -1,820 +1,867 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Aziz Ashfak | ML/AI Engineer</title>
-  <meta name="description" content="Portfolio of Aziz Ashfak, ML/AI Engineer and Researcher specializing in LLMs, RAG, and computer vision." />
-  <meta name="keywords" content="Aziz Ashfak, ML Engineer, AI Engineer, LLM, RAG, Computer Vision, Bangladesh, Portfolio, Tailwind" />
+  <title>Aziz Ashfak | ML Researcher</title>
+  <meta name="description" content="Aziz Ashfak: Statistics graduate and machine learning researcher working on retrieval-augmented generation, multimodal RAG, causal knowledge extraction and LLM evaluation. Seeking PhD or fully funded MS positions for Fall 2027." />
+  <meta name="keywords" content="Aziz Ashfak, machine learning research, multimodal RAG, retrieval-augmented generation, visual question answering, VQA, causal knowledge extraction, fuzzy cognitive maps, LLM evaluation, low-resource NLP, Bangla, PhD Fall 2027, NSTU Statistics" />
   <meta name="author" content="Aziz Ashfak" />
-  <meta name="color-scheme" content="dark light">
+  <meta name="color-scheme" content="dark light" />
+  <link rel="canonical" href="https://aziz-ashfak.github.io/profile/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="profile" />
+  <meta property="og:title" content="Aziz Ashfak | ML Researcher" />
+  <meta property="og:description" content="Retrieval-augmented generation, multimodal RAG, causal knowledge extraction and LLM evaluation. Seeking PhD / fully funded MS for Fall 2027." />
+  <meta property="og:url" content="https://aziz-ashfak.github.io/profile/" />
+  <meta property="og:image" content="https://aziz-ashfak.github.io/profile/images/prof_1_n.jpg" />
+  <meta name="twitter:card" content="summary" />
 
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' x2='1'%3E%3Cstop offset='0' stop-color='%2338bdf8'/%3E%3Cstop offset='0.5' stop-color='%23a78bfa'/%3E%3Cstop offset='1' stop-color='%2334d399'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ccircle cx='32' cy='32' r='30' fill='%230f172a'/%3E%3Cpath d='M18 40c8 6 20 6 28 0' stroke='url(%23g)' stroke-width='3' fill='none'/%3E%3Ccircle cx='24' cy='26' r='3.5' fill='%23a78bfa'/%3E%3Ccircle cx='40' cy='26' r='3.5' fill='%2334d399'/%3E%3C/svg%3E" />
 
-  <!-- Tailwind CSS -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      darkMode: 'class',
-      theme: {
-        extend: {
-          screens: { 'xs': '420px' },
-          fontFamily: {
-            inter: ['Inter', 'system-ui', 'Segoe UI', 'Helvetica', 'Arial', 'sans-serif']
-          },
-          keyframes: {
-            floaty: { '0%': { transform: 'translateY(0)' }, '50%': { transform: 'translateY(-6px)' }, '100%': { transform: 'translateY(0)' } }
-          },
-          animation: {
-            floaty: 'floaty 6s ease-in-out infinite'
-          }
-        }
-      }
-    };
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,500;0,8..60,600;1,8..60,500&display=swap" rel="stylesheet" />
+
+  <!-- Structured data for search engines -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Aziz Ashfak",
+    "url": "https://aziz-ashfak.github.io/profile/",
+    "image": "https://aziz-ashfak.github.io/profile/images/prof_1_n.jpg",
+    "email": "mailto:aziz1516@student.nstu.edu.bd",
+    "jobTitle": "Machine Learning Researcher",
+    "alumniOf": { "@type": "CollegeOrUniversity", "name": "Noakhali Science and Technology University" },
+    "knowsAbout": ["Machine Learning", "Multimodal RAG", "Retrieval-Augmented Generation", "Visual Question Answering", "Causal Knowledge Extraction", "LLM Evaluation", "Low-Resource NLP"],
+    "sameAs": [
+      "https://github.com/aziz-ashfak/",
+      "https://www.linkedin.com/in/aziz-ashfak-/",
+      "https://www.kaggle.com/azizashfak"
+    ]
+  }
   </script>
 
-  <!-- AOS (Animate On Scroll) -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- Apply saved theme before paint to avoid a flash -->
+  <script>
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem('theme'); } catch (e) {}
+      if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
 
-  <!-- Global styles -->
   <style>
-    html { scroll-behavior: smooth; }
+    /* ---------- Theme tokens ---------- */
+    :root {
+      --bg: #f6f7fb;
+      --bg-elev: #ffffff;
+      --bg-soft: #eef1f7;
+      --border: #dde2ec;
+      --text: #0f172a;
+      --text-2: #334155;
+      --muted: #64748b;
+      --accent: #0284c7;
+      --accent-2: #7c3aed;
+      --accent-3: #059669;
+      --warn: #b45309;
+      --chip-bg: #eef2ff;
+      --chip-text: #3730a3;
+      --shadow: 0 1px 2px rgba(15,23,42,.05), 0 8px 24px rgba(15,23,42,.06);
+      --glow-a: rgba(124,58,237,.10);
+      --glow-b: rgba(2,132,199,.10);
+      --grad: linear-gradient(90deg, #0284c7, #7c3aed 55%, #059669);
+    }
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --bg: #070b16;
+        --bg-elev: rgba(15,23,42,.72);
+        --bg-soft: #111a2e;
+        --border: rgba(51,65,85,.7);
+        --text: #f1f5f9;
+        --text-2: #cbd5e1;
+        --muted: #94a3b8;
+        --accent: #38bdf8;
+        --accent-2: #a78bfa;
+        --accent-3: #34d399;
+        --warn: #fbbf24;
+        --chip-bg: rgba(99,102,241,.14);
+        --chip-text: #c7d2fe;
+        --shadow: 0 0 0 1px rgba(255,255,255,.02), 0 12px 40px rgba(0,0,0,.35);
+        --glow-a: rgba(147,51,234,.22);
+        --glow-b: rgba(14,165,233,.18);
+        --grad: linear-gradient(90deg, #38bdf8, #a78bfa 55%, #34d399);
+      }
+    }
+    :root[data-theme="dark"] {
+      --bg: #070b16;
+      --bg-elev: rgba(15,23,42,.72);
+      --bg-soft: #111a2e;
+      --border: rgba(51,65,85,.7);
+      --text: #f1f5f9;
+      --text-2: #cbd5e1;
+      --muted: #94a3b8;
+      --accent: #38bdf8;
+      --accent-2: #a78bfa;
+      --accent-3: #34d399;
+      --warn: #fbbf24;
+      --chip-bg: rgba(99,102,241,.14);
+      --chip-text: #c7d2fe;
+      --shadow: 0 0 0 1px rgba(255,255,255,.02), 0 12px 40px rgba(0,0,0,.35);
+      --glow-a: rgba(147,51,234,.22);
+      --glow-b: rgba(14,165,233,.18);
+      --grad: linear-gradient(90deg, #38bdf8, #a78bfa 55%, #34d399);
+    }
+
+    /* ---------- Base ---------- */
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 84px; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font: 400 15.5px/1.65 Inter, system-ui, "Segoe UI", Helvetica, Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+    body::before {
+      content: ""; position: fixed; inset: 0; z-index: -1; pointer-events: none;
+      background:
+        radial-gradient(40rem 30rem at -10% -10%, var(--glow-a), transparent 60%),
+        radial-gradient(36rem 28rem at 110% 10%, var(--glow-b), transparent 60%);
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; text-underline-offset: 3px; }
     ::selection { background: #0ea5e9; color: #0b1220; }
-    ::-webkit-scrollbar { width: 10px; height: 10px; }
-    ::-webkit-scrollbar-thumb { background: #1f2937; border-radius: 8px; }
-    ::-webkit-scrollbar-track { background: #0b1220; }
+    img { max-width: 100%; display: block; }
+    h1, h2, h3 { line-height: 1.2; margin: 0; }
+    p { margin: 0; }
+    ul { margin: 0; padding-left: 1.1rem; }
+    li + li { margin-top: .4rem; }
+    strong { color: var(--text); font-weight: 600; }
+
+    .wrap { max-width: 1080px; margin: 0 auto; padding: 0 16px; }
+    @media (min-width: 640px) { .wrap { padding: 0 24px; } }
+
+    .grad-text { background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent; }
+    .serif { font-family: "Source Serif 4", Georgia, serif; }
+
+    /* ---------- Nav ---------- */
+    header.nav { position: sticky; top: 0; z-index: 50; padding-top: 12px; }
+    .nav-bar {
+      display: flex; align-items: center; justify-content: space-between; gap: 12px;
+      background: var(--bg-elev); border: 1px solid var(--border); border-radius: 16px;
+      padding: 8px 10px 8px 14px; box-shadow: var(--shadow);
+      backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
+    }
+    .brand { display: flex; align-items: center; gap: 10px; color: var(--text); font-weight: 700; }
+    .brand:hover { text-decoration: none; }
+    .brand small { color: var(--muted); font-weight: 500; font-size: 13px; }
+    .nav-links { display: none; gap: 18px; font-size: 13.5px; }
+    .nav-links a { color: var(--text-2); }
+    .nav-links a:hover { color: var(--accent); text-decoration: none; }
+    @media (min-width: 900px) { .nav-links { display: flex; } }
+    .nav-actions { display: flex; gap: 8px; align-items: center; }
+    .icon-btn {
+      height: 36px; min-width: 36px; padding: 0 10px; border-radius: 10px; cursor: pointer;
+      border: 1px solid var(--border); background: var(--bg-soft); color: var(--text-2);
+      display: inline-flex; align-items: center; justify-content: center; gap: 6px; font: inherit; font-size: 13px;
+    }
+    .icon-btn:hover { border-color: var(--accent-2); }
+    #menuBtn { display: inline-flex; }
+    @media (min-width: 900px) { #menuBtn { display: none; } }
+    .mobile-menu { display: none; margin-top: 8px; padding: 10px; border-radius: 14px; background: var(--bg-elev); border: 1px solid var(--border); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); }
+    .mobile-menu.open { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
+    .mobile-menu a { padding: 8px 10px; border-radius: 10px; background: var(--bg-soft); color: var(--text-2); font-size: 14px; }
+    @media (min-width: 900px) { .mobile-menu.open { display: none; } }
+
+    /* ---------- Buttons / chips ---------- */
+    .btn {
+      display: inline-flex; align-items: center; gap: 8px; padding: 10px 18px; border-radius: 999px;
+      font-weight: 600; font-size: 14px; border: 1px solid var(--border); color: var(--text); background: var(--bg-soft);
+      transition: transform .15s ease, border-color .15s ease;
+    }
+    .btn:hover { text-decoration: none; transform: translateY(-1px); border-color: var(--accent); }
+    .btn-primary { background: linear-gradient(90deg, #0ea5e9, #8b5cf6); color: #fff; border-color: transparent; }
+    .btn-primary:hover { border-color: transparent; }
+    .chip { display: inline-block; padding: 4px 10px; border-radius: 999px; font-size: 12.5px; background: var(--chip-bg); color: var(--chip-text); border: 1px solid transparent; }
+    .chips { display: flex; flex-wrap: wrap; gap: 6px; }
+    .tag { display: inline-block; font-size: 11px; font-weight: 600; letter-spacing: .02em; padding: 2px 8px; border-radius: 999px; border: 1px solid currentColor; white-space: nowrap; }
+    .tag-first { color: var(--accent-3); }
+    .tag-co { color: var(--muted); }
+    .tag-acc { color: var(--accent); }
+
+    /* ---------- Cards / sections ---------- */
+    .card { background: var(--bg-elev); border: 1px solid var(--border); border-radius: 18px; padding: 20px; box-shadow: var(--shadow); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); }
+    @media (min-width: 640px) { .card { padding: 24px; } }
+    section.block { margin-top: 56px; }
+    .sec-head { display: flex; align-items: center; gap: 14px; margin-bottom: 18px; }
+    .sec-head h2 { font-size: 22px; font-weight: 700; letter-spacing: -.01em; }
+    .sec-head::after { content: ""; flex: 1; height: 1px; background: linear-gradient(90deg, var(--border), transparent); }
+    .eyebrow { display: inline-flex; align-items: center; gap: 8px; font-size: 11.5px; font-weight: 600; text-transform: uppercase; letter-spacing: .18em; color: var(--muted); }
+    .eyebrow::before { content: ""; width: 22px; height: 3px; border-radius: 3px; background: var(--grad); }
+    .muted { color: var(--muted); }
+    .t2 { color: var(--text-2); }
+    .small { font-size: 13.5px; }
+    .grid { display: grid; gap: 16px; }
+    @media (min-width: 760px) { .g2 { grid-template-columns: 1fr 1fr; } .g3 { grid-template-columns: repeat(3, 1fr); } }
+
+    /* ---------- Hero ---------- */
+    .hero { margin-top: 28px; padding: 24px; }
+    @media (min-width: 640px) { .hero { padding: 36px; } }
+    .hero-grid { display: grid; gap: 28px; align-items: center; }
+    @media (min-width: 900px) { .hero-grid { grid-template-columns: 1fr 260px; gap: 40px; } }
+    .hero h1 { font-size: clamp(2rem, 5vw, 3rem); font-weight: 800; letter-spacing: -.02em; margin-top: 12px; }
+    .hero .role { margin-top: 6px; font-size: 16px; color: var(--text-2); font-weight: 500; }
+    .hero .lede { margin-top: 16px; font-size: 17px; color: var(--text-2); max-width: 46rem; }
+    .hero .lede.serif { font-size: 19px; line-height: 1.55; }
+    .cta { margin-top: 22px; display: flex; flex-wrap: wrap; gap: 10px; }
+    .links { margin-top: 18px; display: flex; flex-wrap: wrap; gap: 6px 18px; font-size: 14px; }
+    .links a { color: var(--text-2); }
+    .links a:hover { color: var(--accent); }
+    .avatar { position: relative; width: 200px; height: 200px; margin: 0 auto; }
+    @media (min-width: 900px) { .avatar { width: 240px; height: 240px; } }
+    .avatar::before { content: ""; position: absolute; inset: -6px; border-radius: 50%; background: var(--grad); filter: blur(16px); opacity: .55; }
+    .avatar img { position: relative; width: 100%; height: 100%; border-radius: 50%; object-fit: cover; border: 4px solid var(--bg); }
+    .avatar-cap { text-align: center; margin-top: 14px; font-size: 13px; color: var(--muted); }
+
+    /* Status banners */
+    .status { margin-top: 22px; display: grid; gap: 10px; }
+    @media (min-width: 640px) { .status { grid-template-columns: 1fr 1fr; } }
+    .status-item { display: flex; gap: 12px; align-items: flex-start; padding: 12px 14px; border-radius: 14px; border: 1px solid var(--border); background: var(--bg-soft); }
+    .status-item p { font-size: 14px; color: var(--text-2); }
+    .status-item strong { display: block; font-size: 14.5px; }
+    .dot { flex: none; margin-top: 7px; width: 9px; height: 9px; border-radius: 50%; background: var(--accent-3); box-shadow: 0 0 0 4px color-mix(in srgb, var(--accent-3) 22%, transparent); }
+    .dot.violet { background: var(--accent-2); box-shadow: 0 0 0 4px color-mix(in srgb, var(--accent-2) 22%, transparent); }
+    @media (prefers-reduced-motion: no-preference) { .dot { animation: pulse 2.4s ease-in-out infinite; } }
+    @keyframes pulse { 50% { opacity: .45; } }
+
+    /* Metrics */
+    .metrics { margin-top: 16px; display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+    @media (min-width: 760px) { .metrics { grid-template-columns: repeat(4, 1fr); } }
+    .metric { text-align: center; padding: 16px 10px; }
+    .metric b { display: block; font-size: 26px; font-weight: 800; letter-spacing: -.02em; font-variant-numeric: tabular-nums; }
+    .metric span { font-size: 12.5px; color: var(--muted); }
+
+    /* Call section */
+    .call { position: relative; overflow: hidden; border: 1px solid transparent; background:
+      linear-gradient(var(--bg-elev), var(--bg-elev)) padding-box, var(--grad) border-box; }
+    .call h3 { font-size: 18px; font-weight: 700; margin-bottom: 8px; }
+    .call .grid { margin-top: 18px; }
+    .need { padding: 16px; border-radius: 14px; background: var(--bg-soft); border: 1px solid var(--border); }
+    .need h4 { margin: 0 0 6px; font-size: 14.5px; }
+    .need p, .need li { font-size: 14px; color: var(--text-2); }
+
+    /* Timeline */
+    .tl { position: relative; display: grid; gap: 16px; }
+    .tl-item header { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 12px; }
+    .tl-item h3 { font-size: 16.5px; font-weight: 650; }
+    .tl-item .org { color: var(--text-2); font-size: 14.5px; margin-top: 2px; }
+    .tl-item .date { font-size: 13px; color: var(--muted); font-variant-numeric: tabular-nums; white-space: nowrap; }
+    .tl-item .proj { margin-top: 10px; font-size: 14.5px; color: var(--text-2); }
+    .tl-item .proj em { font-family: "Source Serif 4", Georgia, serif; font-style: italic; color: var(--text); }
+    .tl-item ul { margin-top: 10px; font-size: 14.5px; color: var(--text-2); }
+    .num { color: var(--text); font-weight: 600; font-variant-numeric: tabular-nums; }
+
+    /* Publications */
+    .pub-group + .pub-group { margin-top: 26px; }
+    .pub-group h3 { font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: .14em; color: var(--muted); margin-bottom: 10px; }
+    .pubs { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }
+    .pubs li { display: grid; grid-template-columns: 38px 1fr; gap: 10px; margin: 0; padding: 14px 16px; border-radius: 14px; background: var(--bg-elev); border: 1px solid var(--border); }
+    .pubs .id { font-size: 12.5px; font-weight: 700; color: var(--muted); padding-top: 2px; font-variant-numeric: tabular-nums; }
+    .pubs .title { font-family: "Source Serif 4", Georgia, serif; font-size: 16.5px; font-weight: 500; color: var(--text); line-height: 1.4; }
+    .pubs .meta { margin-top: 6px; display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; font-size: 13px; color: var(--muted); }
+    .pubs .venue { font-style: italic; color: var(--text-2); }
+
+    /* Projects */
+    .proj-card h3 { font-size: 16px; font-weight: 650; }
+    .proj-card .sub { font-size: 13.5px; color: var(--muted); margin-top: 2px; }
+    .proj-card p { margin-top: 10px; font-size: 14.5px; color: var(--text-2); }
+    .proj-links { margin-top: 12px; display: flex; gap: 14px; font-size: 13.5px; font-weight: 600; }
+
+    /* Skills */
+    .skill-row { display: grid; gap: 6px; padding: 14px 0; border-top: 1px solid var(--border); }
+    .skill-row:first-child { border-top: 0; padding-top: 0; }
+    .skill-row:last-child { padding-bottom: 0; }
+    @media (min-width: 760px) { .skill-row { grid-template-columns: 170px 1fr; gap: 16px; align-items: baseline; } }
+    .skill-row h3 { font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: .1em; color: var(--muted); }
+
+    /* Footer */
+    footer.site { margin-top: 64px; padding: 20px 0 28px; border-top: 1px solid var(--border); font-size: 13px; color: var(--muted); }
+    footer.site .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; }
+    #backToTop { position: fixed; right: 16px; bottom: 16px; display: none; z-index: 40; }
+    #backToTop.show { display: inline-flex; }
+
+    /* Reveal on scroll */
+    @media (prefers-reduced-motion: no-preference) {
+      .reveal { opacity: 0; transform: translateY(14px); transition: opacity .6s ease, transform .6s ease; }
+      .reveal.in { opacity: 1; transform: none; }
+    }
   </style>
 </head>
-<body class="min-h-screen bg-slate-950 text-slate-50 text-[15px] leading-relaxed sm:text-base font-inter">
-  <!-- Ambient background -->
-  <div class="fixed inset-0 -z-10 overflow-hidden">
-    <div class="absolute -top-40 -left-24 h-96 w-96 rounded-full bg-purple-600 opacity-25 blur-3xl animate-pulse"></div>
-    <div class="absolute top-20 -right-40 h-[28rem] w-[28rem] rounded-full bg-sky-500 opacity-20 blur-3xl animate-pulse"></div>
-    <div class="absolute bottom-0 left-1/3 h-80 w-80 rounded-full bg-emerald-500 opacity-20 blur-3xl animate-pulse"></div>
-  </div>
+<body>
 
-  <!-- Sticky navbar -->
-  <header class="sticky top-0 z-40">
-    <nav class="mx-auto max-w-6xl px-3 xs:px-4 sm:px-6 lg:px-8 mt-3">
-      <div class="rounded-2xl bg-slate-900/60 border border-slate-800/70 backdrop-blur-xl shadow-lg shadow-slate-900/40">
-        <div class="flex items-center justify-between px-3 py-2 sm:px-4 sm:py-2.5">
-          <!-- Brand -->
-          <a href="#about" class="flex items-center gap-2">
-            <div class="h-9 w-9 rounded-2xl bg-slate-900/70 border border-slate-700/80 flex items-center justify-center shadow-md shadow-slate-900/60">
-              <span class="bg-gradient-to-r from-sky-400 via-purple-400 to-emerald-400 bg-clip-text text-transparent text-sm font-bold">Aziz</span>
-            </div>
-            <span class="hidden sm:inline text-sm text-slate-300">ML/AI Engineer</span>
-          </a>
-
-          <!-- Desktop links -->
-          <div class="hidden md:flex gap-4 lg:gap-6 text-xs lg:text-sm text-slate-200">
-            <a href="#experience" class="hover:text-sky-400 transition-colors">Experience</a>
-            <a href="#projects" class="hover:text-sky-400 transition-colors">Projects</a>
-            <a href="#research" class="hover:text-sky-400 transition-colors">Research</a>
-            <a href="#skills" class="hover:text-sky-400 transition-colors">Skills</a>
-            <a href="#achievements" class="hover:text-sky-400 transition-colors">Achievements</a>
-            <a href="#blog" class="hover:text-sky-400 transition-colors">Blog</a>
-            <a href="#contact" class="hover:text-sky-400 transition-colors">Contact</a>
-          </div>
-
-          <!-- Actions -->
-          <div class="flex items-center gap-2">
-            <button id="themeToggle"
-              class="text-xs sm:text-sm px-3 py-1.5 rounded-full bg-slate-900/60 border border-slate-700/70 hover:border-purple-400 hover:bg-slate-900/80 transition-colors">
-              Theme
-            </button>
-            <a href="mailto:azizashfak@gmail.com"
-               class="hidden xs:inline text-xs sm:text-sm px-3 py-1.5 rounded-full bg-gradient-to-r from-sky-500 to-purple-500 text-white hover:from-sky-400 hover:to-purple-400 transition-colors">
-              Contact
-            </a>
-            <button id="menuBtn" class="md:hidden inline-flex items-center justify-center h-9 w-9 rounded-xl border border-slate-700/70 bg-slate-900/50 hover:bg-slate-800/60">
-              <span class="sr-only">Open menu</span>
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-200" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-              </svg>
-            </button>
-          </div>
+  <!-- ============ NAV ============ -->
+  <header class="nav">
+    <div class="wrap">
+      <nav class="nav-bar" aria-label="Primary">
+        <a href="#about" class="brand"><span class="grad-text">Aziz Ashfak</span> <small class="hide-xs">ML Researcher</small></a>
+        <div class="nav-links">
+          <a href="#interests">Interests</a>
+          <a href="#education">Education</a>
+          <a href="#research">Research</a>
+          <a href="#publications">Publications</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#opportunities">Fall 2027</a>
+          <a href="#contact">Contact</a>
         </div>
-
-        <!-- Mobile menu -->
-        <div id="mobileMenu" class="hidden md:hidden px-3 pb-3">
-          <div class="grid grid-cols-2 gap-2 text-sm">
-            <a href="#experience" class="rounded-lg px-3 py-2 bg-slate-800/60 border border-slate-700 hover:bg-slate-800">Experience</a>
-            <a href="#projects" class="rounded-lg px-3 py-2 bg-slate-800/60 border border-slate-700 hover:bg-slate-800">Projects</a>
-            <a href="#research" class="rounded-lg px-3 py-2 bg-slate-800/60 border border-slate-700 hover:bg-slate-800">Research</a>
-            <a href="#skills" class="rounded-lg px-3 py-2 bg-slate-800/60 border border-slate-700 hover:bg-slate-800">Skills</a>
-            <a href="#achievements" class="rounded-lg px-3 py-2 bg-slate-800/60 border border-slate-700 hover:bg-slate-800">Achievements</a>
-            <a href="#blog" class="rounded-lg px-3 py-2 bg-slate-800/60 border border-slate-700 hover:bg-slate-800">Blog</a>
-            <a href="#contact" class="rounded-lg px-3 py-2 bg-slate-800/60 border border-slate-700 hover:bg-slate-800 col-span-2">Contact</a>
-          </div>
+        <div class="nav-actions">
+          <button id="themeToggle" class="icon-btn" type="button" aria-label="Toggle light or dark theme">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+          </button>
+          <a href="resume/AzizAshfak.pdf" class="icon-btn" style="color:var(--text)">CV</a>
+          <button id="menuBtn" class="icon-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+          </button>
         </div>
+      </nav>
+      <div id="mobileMenu" class="mobile-menu">
+        <a href="#interests">Interests</a>
+          <a href="#education">Education</a>
+          <a href="#research">Research</a>
+          <a href="#publications">Publications</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#opportunities">Fall 2027</a>
+          <a href="#contact">Contact</a>
       </div>
-    </nav>
+    </div>
   </header>
 
-  <!-- Main -->
-  <main class="max-w-6xl mx-auto px-3 xs:px-4 sm:px-6 lg:px-8 py-6 sm:py-10">
-    <!-- Hero -->
-    <section id="about"
-      class="mb-10 sm:mb-14 lg:mb-16 rounded-3xl bg-slate-900/60 border border-slate-800/80 backdrop-blur-xl px-4 sm:px-8 py-6 sm:py-8 lg:py-10 shadow-[0_0_60px_rgba(15,23,42,0.9)]"
-      data-aos="fade-up" data-aos-duration="800">
-      <div class="grid lg:grid-cols-[1fr,320px] gap-8 lg:gap-10 items-center">
-        <!-- Intro -->
+  <main class="wrap">
+
+    <!-- ============ HERO ============ -->
+    <section id="about" class="card hero">
+      <div class="hero-grid">
         <div>
-          <p class="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.2em] text-slate-400 mb-3">
-            <span class="inline-block h-1 w-6 rounded-full bg-gradient-to-r from-sky-400 to-purple-400"></span>
-            ML / AI Engineer · Researcher
+          <span class="eyebrow">Statistics · Machine Learning Research</span>
+          <h1><span class="grad-text">Aziz Ashfak</span></h1>
+          <p class="role">B.Sc. (Hons) in Statistics, Noakhali Science and Technology University · Research Collaborator, University of South Alabama</p>
+
+          <p class="lede serif">
+            I build retrieval-grounded language-model systems and test whether they can be trusted. I want every claim
+            an AI system extracts to be traceable to the evidence behind it.
           </p>
-       <h1 class="text-[1.85rem] sm:text-4xl lg:text-5xl font-bold tracking-tight leading-tight"> Building reliable <span class="bg-gradient-to-r from-sky-400 via-purple-400 to-emerald-400 bg-clip-text text-transparent"> AI systems </span> for real‑world impact. </h1>
-          <p class="mt-3 sm:mt-4 text-sm sm:text-base text-slate-300 max-w-2xl">
-          I specialize in LLMs, RAG systems, and computer vision, grounded in a strong statistics foundation. I build clean, scalable, production-ready AI systems and research tools that deliver real impact
+          <p class="lede small" style="font-size:15.5px">
+            My work spans <strong>retrieval-augmented generation</strong>, <strong>multimodal RAG</strong>,
+            <strong>causal knowledge extraction</strong>, <strong>LLM evaluation</strong> and
+            <strong>low-resource NLP</strong>. My training in statistics shapes how I evaluate models: pre-registered
+            experiments, shuffled controls, bootstrap intervals and FDR-corrected comparisons.
           </p>
 
-          <!-- CTA -->
-          <div class="mt-5 flex flex-wrap items-center gap-3 text-xs sm:text-sm">
-            <a href="#projects"
-               class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-sky-500 to-purple-500 text-slate-50 font-medium shadow-lg shadow-sky-900/40 hover:from-sky-400 hover:to-purple-400 transform-gpu hover:scale-[1.03] transition-all duration-300">
-              View projects <span class="animate-bounce">↓</span>
-            </a>
-            <a href="mailto:azizashfak@gmail.com"
-               class="px-4 py-2 rounded-full border border-slate-500/70 text-slate-200 hover:border-sky-400 hover:text-sky-300 bg-slate-900/60 backdrop-blur-sm transition-colors">
-              Hire / collaborate
-            </a>
-            <a href="resume/AzizAshfak.pdf"
-               class="px-4 py-2 rounded-full border border-purple-500/60 text-slate-100 hover:border-emerald-400 hover:text-emerald-300 bg-slate-900/60 backdrop-blur-sm transition-colors">
-              Download resume
-            </a>
+          <div class="status" role="list">
+            <div class="status-item" role="listitem">
+              <span class="dot" aria-hidden="true"></span>
+              <p><strong>Seeking PhD or fully funded MS positions, Fall 2027</strong>Machine learning, NLP and multimodal AI.</p>
+            </div>
+            <div class="status-item" role="listitem">
+              <span class="dot violet" aria-hidden="true"></span>
+              <p><strong>Seeking collaborators and GPU access</strong>To continue my upcoming Multimodal VQA research.</p>
+            </div>
           </div>
 
-          <!-- Details -->
-          <div class="mt-5 flex flex-wrap gap-x-4 gap-y-1 text-xs text-slate-300">
-            <p class="mr-4">Noakhali, Bangladesh · B.Sc. in Statistics (NSTU, 2022–2026)</p>
-            <p><span class="font-semibold text-slate-200">Phone:</span> 01730644634</p>
-            <p><span class="font-semibold text-slate-200">Email:</span>
-              <a href="mailto:azizashfak@gmail.com" class="text-sky-300 hover:underline">azizashfak@gmail.com</a>
+          <div class="cta">
+            <a href="resume/AzizAshfak.pdf" class="btn btn-primary">Download CV</a>
+            <a href="#opportunities" class="btn">Collaborate with me</a>
+            <a href="mailto:aziz1516@student.nstu.edu.bd" class="btn">Email</a>
+          </div>
+
+          <div class="links">
+            <a href="https://github.com/aziz-ashfak/" target="_blank" rel="noopener">GitHub ↗</a>
+            <a href="https://www.linkedin.com/in/aziz-ashfak-/" target="_blank" rel="noopener">LinkedIn ↗</a>
+            <a href="https://www.kaggle.com/azizashfak" target="_blank" rel="noopener">Kaggle ↗</a>
+            <a href="mailto:aziz1516@student.nstu.edu.bd">aziz1516@student.nstu.edu.bd</a>
+          </div>
+        </div>
+
+        <div>
+          <div class="avatar">
+            <img src="images/prof_1_n.jpg" alt="Portrait of Aziz Ashfak" width="240" height="240" decoding="async" />
+          </div>
+          <p class="avatar-cap">Noakhali, Bangladesh</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ RESEARCH INTERESTS ============ -->
+    <section id="interests" class="block reveal" aria-labelledby="ri">
+      <div class="sec-head"><h2 id="ri">Research interests</h2></div>
+      <div class="chips">
+        <span class="chip">Machine Learning</span>
+        <span class="chip">Multimodal RAG</span>
+        <span class="chip">Retrieval-Augmented Generation</span>
+        <span class="chip">Causal Knowledge Extraction</span>
+        <span class="chip">LLM Evaluation</span>
+        <span class="chip">Low-Resource NLP</span>
+      </div>
+    </section>
+
+    <!-- ============ EDUCATION ============ -->
+    <section id="education" class="block">
+      <div class="sec-head"><h2>Education</h2></div>
+      <article class="card tl-item reveal">
+        <header>
+          <div>
+            <h3>B.Sc. (Honours) in Statistics</h3>
+            <p class="org">Noakhali Science and Technology University, Bangladesh</p>
+          </div>
+          <span class="date">Apr 2022 – Aug 2026</span>
+        </header>
+        <ul>
+          <li>CGPA <span class="num">3.37 / 4.00</span></li>
+          <li>Thesis: <strong>BanglaStatMCQ-500</strong>, a statistical reasoning benchmark in Bangla. Supervisor: Md. Rasel Hossain, Assistant Professor, Department of Statistics.</li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- ============ RESEARCH EXPERIENCE ============ -->
+    <section id="research" class="block">
+      <div class="sec-head"><h2>Research experience</h2></div>
+      <div class="tl">
+
+        <article class="card tl-item reveal">
+          <header>
+            <div>
+              <h3>Research Collaborator (AI / ML)</h3>
+              <p class="org">Gulf Council Research Project · University of South Alabama</p>
+            </div>
+            <span class="date">Nov 2025 – Present</span>
+          </header>
+          <p class="proj"><em>Evidence-grounded causal knowledge graphs from public fisheries discourse</em>, with Mahi Washim.</p>
+          <ul>
+            <li>Built a RAG pipeline over <span class="num">3,000+</span> documents, resolving <span class="num">498,770</span> passages and <span class="num">112,378</span> claims into a fuzzy cognitive map of <span class="num">909</span> evidence-weighted edges.</li>
+            <li>Audited it in twelve pre-registered experiments. <span class="num">96.3%</span> of claims traced to their cited source, against <span class="num">0.2%</span> for a shuffled control. Also reported: the vocabulary's <span class="num">86.1%</span> discard rate and an <span class="num">11.2</span>-point swing between judge models.</li>
+          </ul>
+        </article>
+
+        <article class="card tl-item reveal">
+          <header>
+            <div>
+              <h3>Research Collaborator</h3>
+              <p class="org">Coastal Evidence Synthesis Project · University of South Alabama</p>
+            </div>
+            <span class="date">Jun 2026 – Present</span>
+          </header>
+          <p class="proj"><em>Where coastal planning discourse diverges from the science it cites</em>, with Mahi Washim.</p>
+          <ul>
+            <li>Coded <span class="num">8,940</span> segments from <span class="num">103</span> PDFs (<span class="num">12,257</span> pages) at <span class="num">94%</span> audited precision. Public Health co-occurred below chance with every other theme (lift <span class="num">0.26</span> to <span class="num">0.60</span>).</li>
+            <li>Recovered <span class="num">744</span> cited references. Water quality appears in <span class="num">72.8%</span> of documents but makes up only <span class="num">2.9%</span> of the science they cite.</li>
+          </ul>
+        </article>
+
+        <article class="card tl-item reveal">
+          <header>
+            <div>
+              <h3>Research Data Collaborator</h3>
+              <p class="org">Human–Wildlife Conflict Corpus Project</p>
+            </div>
+            <span class="date">Mar 2026 – Aug 2026</span>
+          </header>
+          <p class="proj"><em>Comparative mental models of human–wildlife conflict across 19 South and Southeast Asian countries</em>, with Mahi Washim.</p>
+          <ul>
+            <li>Built a dual-pipeline ETL across <span class="num">19</span> countries, yielding <span class="num">5,300</span> documents and <span class="num">60,000+</span> provenance-linked concept nodes.</li>
+            <li>Compared ten partitioned maps using centrality, Mann-Whitney U tests, bootstrap resampling and FDR correction.</li>
+          </ul>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ============ PUBLICATIONS ============ -->
+    <section id="publications" class="block">
+      <div class="sec-head"><h2>Publications &amp; manuscripts</h2></div>
+
+      <div class="pub-group reveal">
+        <h3>Accepted · Peer-reviewed</h3>
+        <ol class="pubs">
+          <li>
+            <span class="id">A1</span>
+            <div>
+              <p class="title">Optimizing U-Net Performance: Evaluation of State-of-the-Art Encoders and Optimizers on Human Segmentation Dataset</p>
+              <p class="meta"><span class="venue">IEEE SMC 2026, Bellevue, WA</span> · To appear in IEEE Xplore <span class="tag tag-acc">Accepted</span> <span class="tag tag-co">Co-author</span></p>
+            </div>
+          </li>
+        </ol>
+      </div>
+
+      <div class="pub-group reveal">
+        <h3>Under review</h3>
+        <ol class="pubs">
+          <li>
+            <span class="id">R1</span>
+            <div>
+              <p class="title">Robustness of CNN Transfer Learning versus Vision Transformers for Aerial Scene Classification</p>
+              <p class="meta"><span class="venue">ICCIT 2026</span> <span class="tag tag-first">First author</span></p>
+            </div>
+          </li>
+          <li>
+            <span class="id">R2</span>
+            <div>
+              <p class="title">Self-Supervised versus ImageNet Pretraining for Bangladeshi Traffic Vehicle Recognition under Limited Labels</p>
+              <p class="meta"><span class="venue">IEEE BDCloud 2026</span> <span class="tag tag-first">First author</span></p>
+            </div>
+          </li>
+          <li>
+            <span class="id">R3</span>
+            <div>
+              <p class="title">Transfer Learning for Chest X-Ray Lung Segmentation: A Comparative Study of CNN Backbones</p>
+              <p class="meta"><span class="venue">Scientific Reports</span> <span class="tag tag-co">Co-author</span></p>
+            </div>
+          </li>
+          <li>
+            <span class="id">R4</span>
+            <div>
+              <p class="title">Skilled Birth Attendance and Height-for-Age Among Children Aged 0–23 Months in Bangladesh: A Survey-Weighted TMLE Analysis of the 2025 MICS</p>
+              <p class="meta"><span class="venue">BMC Public Health</span> <span class="tag tag-co">Co-author</span></p>
+            </div>
+          </li>
+          <li>
+            <span class="id">R5</span>
+            <div>
+              <p class="title">Functional Difficulty and ICT Skill Attainment Among Women in Bangladesh: Evidence from the 2025 MICS</p>
+              <p class="meta"><span class="venue">BMC Public Health</span> <span class="tag tag-co">Co-author</span></p>
+            </div>
+          </li>
+          <li>
+            <span class="id">R6</span>
+            <div>
+              <p class="title">Same Score, Different Deprivation: A Survey-Weighted Latent Class Analysis of Multidimensional Deprivation Among Children Aged 24–59 Months</p>
+              <p class="meta"><span class="venue">BMC Public Health</span> <span class="tag tag-co">Co-author</span></p>
+            </div>
+          </li>
+        </ol>
+      </div>
+
+      <div class="pub-group reveal">
+        <h3>In preparation</h3>
+        <ol class="pubs">
+          <li>
+            <span class="id">P1</span>
+            <div>
+              <p class="title">Can a Retrieval-Augmented Fuzzy Cognitive Map Be Trusted? A Twelve-Experiment Audit of Gulf of Mexico Fisheries Discourse</p>
+              <p class="meta"><span class="tag tag-co">Co-author</span></p>
+            </div>
+          </li>
+          <li>
+            <span class="id">P2</span>
+            <div>
+              <p class="title">Retrieval Grounds Causal Maps: A Benchmark for Fuzzy Cognitive Maps Extracted from Language-Model Answers</p>
+              <p class="meta"><span class="tag tag-co">Co-author</span></p>
+            </div>
+          </li>
+          <li>
+            <span class="id">P3</span>
+            <div>
+              <p class="title">Comparative Mental Models of Human–Wildlife Conflict across South and Southeast Asia: A Fuzzy Cognitive Map Analysis</p>
+              <p class="meta"><span class="tag tag-co">Co-author</span></p>
+            </div>
+          </li>
+          <li>
+            <span class="id">P4</span>
+            <div>
+              <p class="title">AI-Mined Fuzzy Cognitive Maps for Evidence-Grounded Wildlife Conservation in the U.S. Southwest</p>
+              <p class="meta"><span class="tag tag-co">Co-author</span></p>
+            </div>
+          </li>
+          <li>
+            <span class="id">P5</span>
+            <div>
+              <p class="title">Evaluating Multimodal StatTransformer Architectures with Large Language Models for Statistical Reasoning</p>
+              <p class="meta"><span class="tag tag-first">First author</span></p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ PROFESSIONAL EXPERIENCE ============ -->
+    <section id="experience" class="block">
+      <div class="sec-head"><h2>Professional experience</h2></div>
+      <div class="tl">
+        <article class="card tl-item reveal">
+          <header>
+            <div>
+              <h3>AI Engineer</h3>
+              <p class="org">ROYALX LLC · Dhaka, Bangladesh (remote, full-time)</p>
+            </div>
+            <span class="date">Mar 2025 – Nov 2025</span>
+          </header>
+          <ul>
+            <li>Shipped LLM applications and RAG pipelines (OpenAI, Groq, Hugging Face, LangChain, LlamaIndex) as production FastAPI and Streamlit services.</li>
+            <li>Fine-tuned transformers for question answering and document understanding.</li>
+          </ul>
+        </article>
+
+        <div class="grid g2">
+          <article class="card tl-item reveal">
+            <header>
+              <div>
+                <h3>AI Tutor</h3>
+                <p class="org">AI Devlop · Dhaka (remote, part-time)</p>
+              </div>
+              <span class="date">Apr 2025 – Aug 2025</span>
+            </header>
+            <ul>
+              <li>Taught <span class="num">100+</span> students exploratory analysis, statistics, machine learning and deep learning through end-to-end ML pipelines.</li>
+            </ul>
+          </article>
+
+          <article class="card tl-item reveal">
+            <header>
+              <div>
+                <h3>Freelance Data Analyst</h3>
+                <p class="org">Hestia Traffic App Project</p>
+              </div>
+              <span class="date">Dec 2024 – Feb 2025</span>
+            </header>
+            <ul>
+              <li>Modelled crash severity against violation, exposure and environmental variables on large-scale road-accident data.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section id="projects" class="block">
+      <div class="sec-head"><h2>Selected projects</h2></div>
+      <div class="grid g2">
+        <article class="card proj-card reveal">
+          <h3>Multimodal Research Paper Analyst</h3>
+          <p class="sub">Multimodal RAG over paper text and figures</p>
+          <p>A Groq and Llama pipeline that summarises paper text and interprets charts, served as a Streamlit app that exports to Word, PDF, CSV and Markdown.</p>
+          <div class="proj-links">
+            <a href="https://github.com/aziz-ashfak/ResearchPaperAnalyst" target="_blank" rel="noopener">Code ↗</a>
+            <a href="https://drive.google.com/file/d/1yYUWz3_hMLt_eUVR8UNS7g4T9Z8S3zT9/view?usp=sharing" target="_blank" rel="noopener">Demo ↗</a>
+          </div>
+        </article>
+
+        <article class="card proj-card reveal">
+          <h3>Brain Tumor Detection</h3>
+          <p class="sub">MRI tumour classifier · 98.52% accuracy</p>
+          <p>Compared LeNet, ResNet152V2 and DenseNet121 under matched augmentation. The best model is served as an ONNX service with CI/CD.</p>
+          <div class="proj-links">
+            <a href="https://github.com/aziz-ashfak/Brain-Tumor-Detection" target="_blank" rel="noopener">Code ↗</a>
+            <a href="https://brain-tumor-detection-8yp3.onrender.com/" target="_blank" rel="noopener">Live ↗</a>
+          </div>
+        </article>
+
+        <article class="card proj-card reveal">
+          <h3>Indian Flight Price Prediction</h3>
+          <p class="sub">Fare model over 300,261 records · 99.69% accuracy</p>
+          <p>A BaggingRegressor behind a reproducible preprocessing pipeline, deployed through GitHub Actions.</p>
+          <div class="proj-links">
+            <a href="https://github.com/aziz-ashfak/Indian-Flight-Price-Prediction" target="_blank" rel="noopener">Code ↗</a>
+            <a href="https://indian-flight-price-prediction.onrender.com/" target="_blank" rel="noopener">Live ↗</a>
+          </div>
+        </article>
+
+        <article class="card proj-card reveal">
+          <h3>QnA RAG Bot</h3>
+          <p class="sub">Context-grounded question answering over uploaded PDFs</p>
+          <p>Built with FastAPI, LangChain and Hugging Face, using FAISS vector search and figure analysis.</p>
+          <div class="proj-links">
+            <a href="https://github.com/aziz-ashfak/QNARAG" target="_blank" rel="noopener">Code ↗</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section id="skills" class="block">
+      <div class="sec-head"><h2>Technical skills</h2></div>
+      <div class="card reveal">
+        <div class="skill-row">
+          <h3>Programming</h3>
+          <div class="chips"><span class="chip">Python</span><span class="chip">SQL</span><span class="chip">R</span><span class="chip">C (basic)</span><span class="chip">Java (basic)</span></div>
+        </div>
+        <div class="skill-row">
+          <h3>ML / DL</h3>
+          <div class="chips"><span class="chip">PyTorch</span><span class="chip">TensorFlow</span><span class="chip">scikit-learn</span><span class="chip">Transformers</span><span class="chip">Vision Transformers</span><span class="chip">CNNs</span><span class="chip">Transfer learning</span><span class="chip">PEFT / LoRA</span></div>
+        </div>
+        <div class="skill-row">
+          <h3>LLMs &amp; Retrieval</h3>
+          <div class="chips"><span class="chip">LangChain</span><span class="chip">LangGraph</span><span class="chip">LlamaIndex</span><span class="chip">OpenAI API</span><span class="chip">Hugging Face</span><span class="chip">FAISS</span><span class="chip">ChromaDB</span><span class="chip">Multimodal RAG</span><span class="chip">Agentic RAG</span></div>
+        </div>
+        <div class="skill-row">
+          <h3>Causal &amp; Graph</h3>
+          <div class="chips"><span class="chip">Fuzzy cognitive maps</span><span class="chip">Causal knowledge-graph extraction</span><span class="chip">Provenance tracking</span><span class="chip">Centrality analysis</span><span class="chip">Co-occurrence analysis</span></div>
+        </div>
+        <div class="skill-row">
+          <h3>Statistics</h3>
+          <div class="chips"><span class="chip">Hypothesis testing</span><span class="chip">Regression</span><span class="chip">Experimental design</span><span class="chip">Bootstrap resampling</span><span class="chip">Permutation tests</span><span class="chip">FDR correction</span><span class="chip">Benchmark design</span></div>
+        </div>
+        <div class="skill-row">
+          <h3>Engineering</h3>
+          <div class="chips"><span class="chip">PostgreSQL</span><span class="chip">Docker</span><span class="chip">FastAPI</span><span class="chip">Flask</span><span class="chip">ONNX</span><span class="chip">Git</span><span class="chip">GitHub Actions CI/CD</span><span class="chip">ETL pipeline design</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ REFERENCES ============ -->
+    <section id="references" class="block">
+      <div class="sec-head"><h2>References</h2></div>
+      <div class="grid g2">
+        <div class="card reveal">
+          <h3 style="font-size:16px">Mahi Washim</h3>
+          <p class="t2 small" style="margin-top:4px">Graduate Research Assistant<br>University of South Alabama, Mobile, AL, USA</p>
+          <p class="small" style="margin-top:8px"><a href="mailto:mw2534@jagmail.southalabama.edu">mw2534@jagmail.southalabama.edu</a></p>
+        </div>
+        <div class="card reveal">
+          <h3 style="font-size:16px">Md. Rasel Hossain</h3>
+          <p class="t2 small" style="margin-top:4px">Assistant Professor, Department of Statistics<br>Noakhali Science and Technology University, Bangladesh</p>
+          <p class="small" style="margin-top:8px"><a href="mailto:rasel.stat@nstu.edu.bd">rasel.stat@nstu.edu.bd</a></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ OPPORTUNITIES / CALL ============ -->
+    <section id="opportunities" class="block reveal">
+      <div class="sec-head"><h2>Fall 2027 &amp; collaboration</h2></div>
+      <div class="card call">
+        <h3>I'm looking for a PhD or fully funded MS position starting Fall 2027.</h3>
+        <p class="t2">
+          I'd like to join a group working on trustworthy, evidence-grounded and multimodal AI. My research so far
+          has been on retrieval pipelines that turn large document collections into auditable causal knowledge,
+          and on benchmarks that test how well models reason. In graduate school I want to extend that work from
+          text to images. If you supervise students in this area, I'd be glad to share my CV and writing samples.
+        </p>
+
+        <div class="grid g3">
+          <div class="need">
+            <h4>Next: Multimodal VQA</h4>
+            <p>
+              My next project is on <strong>Multimodal Visual Question Answering</strong>. It builds on my statistical-reasoning
+              benchmark (BanglaStatMCQ-500), a StatTransformer study now in preparation, and my figure-aware RAG systems.
+              The core question is whether vision-language models answer from what an image actually shows.
             </p>
           </div>
-
-          <!-- Links -->
-          <div class="mt-4 flex flex-wrap gap-4 text-sm">
-            <a href="https://github.com/aziz-ashfak" class="text-slate-300 hover:text-sky-300 transition-colors">GitHub ↗</a>
-            <a href="https://www.linkedin.com/in/azizashfak" class="text-slate-300 hover:text-sky-300 transition-colors">LinkedIn ↗</a>
-            <a href="https://www.kaggle.com/azizashfak" class="text-slate-300 hover:text-sky-300 transition-colors">Kaggle ↗</a>
-            <a href="https://leetcode.com/azizashfak" class="text-slate-300 hover:text-sky-300 transition-colors">LeetCode ↗</a>
+          <div class="need">
+            <h4>What I need: GPU compute</h4>
+            <p>
+              Fine-tuning and evaluating vision-language models needs GPU resources I can't currently get. I'm looking for
+              <strong>GPU access</strong>, such as shared lab cluster time, cloud research credits or a hosted collaboration,
+              so this work can continue.
+            </p>
           </div>
-
-         
+          <div class="need">
+            <h4>What I bring</h4>
+            <ul>
+              <li>End-to-end RAG and ETL pipelines at scale (3,000+ documents, 498,770 passages)</li>
+              <li>Rigorous, pre-registered evaluation design</li>
+              <li>Production engineering: PyTorch, Transformers, LoRA, FastAPI, Docker</li>
+            </ul>
+          </div>
         </div>
 
-        <!-- Avatar -->
-        <div class="w-full max-w-[320px] mx-auto lg:mx-0" data-aos="zoom-in" data-aos-duration="800">
-          <div class="relative flex flex-col items-center text-center">
-            <div class="relative mb-4">
-              <div class="absolute -inset-1 rounded-[28px] bg-gradient-to-tr from-sky-500 via-purple-500 to-emerald-400 opacity-60 blur-xl animate-pulse"></div>
-              <img
-                src="images/prof_1_n.jpg"
-                alt="Portrait of Aziz Ashfak"
-                class="relative h-36 w-36 sm:h-44 sm:w-44 md:h-56 md:w-56 rounded-full border-4 border-slate-900 object-cover shadow-xl"
-                loading="lazy" decoding="async"
-                />
-
-            </div>
-            <p class="text-lg sm:text-xl font-bold bg-gradient-to-r from-sky-400 via-purple-400 to-emerald-400 bg-clip-text text-transparent">
-            Aziz Ashfak
-           </p>
-
-
-
-            <p class="text-xs text-slate-400 mt-1">ML/AI Engineer · LLMs · RAG · CV</p>
-            <div class="mt-3 inline-flex items-center gap-2 text-[11px] text-emerald-300 bg-emerald-500/10 px-3 py-1 rounded-full border border-emerald-500/40 animate-floaty">
-              <span class="h-1.5 w-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
-              Open to roles & collaborations
-            </div>
-          </div>
+        <div class="cta">
+          <a href="mailto:aziz1516@student.nstu.edu.bd?subject=Collaboration%20%2F%20Fall%202027%20opportunity" class="btn btn-primary">Get in touch</a>
+          <a href="resume/AzizAshfak.pdf" class="btn">View CV</a>
         </div>
       </div>
     </section>
-<section class="my-6">
-  <div class="mt-8 grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-    
-    <div class="rounded-xl bg-slate-800/60 border border-slate-700/70 p-3 text-center hover:border-sky-400/50 transition">
-      <p class="text-lg sm:text-xl font-bold text-sky-300">100+</p>
-      <p class="text-[11px] text-slate-400">Students mentored</p>
-    </div>
 
-    <div class="rounded-xl bg-slate-800/60 border border-slate-700/70 p-3 text-center hover:border-purple-400/50 transition">
-      <p class="text-lg sm:text-xl font-bold text-purple-300">10+</p>
-      <p class="text-[11px] text-slate-400">Deployed apps</p>
-    </div>
-
-    <div class="rounded-xl bg-slate-800/60 border border-slate-700/70 p-3 text-center hover:border-emerald-400/50 transition">
-      <p class="text-lg sm:text-xl font-bold text-emerald-300">5</p>
-      <p class="text-[11px] text-slate-400">RAG systems</p>
-    </div>
-
-    <div class="rounded-xl bg-slate-800/60 border border-slate-700/70 p-3 text-center hover:border-orange-400/50 transition">
-      <p class="text-lg sm:text-xl font-bold text-orange-300">3</p>
-      <p class="text-[11px] text-slate-400">CV pipelines</p>
-    </div>
-
-  </div>
-</section>
-
-    <!-- Experience -->
-    <section id="experience" class="mb-10 sm:mb-14" data-aos="fade-up" data-aos-duration="800">
-      <div class="flex items-center justify-between mb-4">
-        <h2 class="text-xl sm:text-2xl font-semibold">Experience</h2>
-        <div class="h-px flex-1 ml-4 bg-gradient-to-r from-slate-600 via-slate-700 to-transparent"></div>
-      </div>
-
-      <div class="grid gap-5 lg:grid-cols-2">
-        <!-- ROYALX -->
-        <article class="group rounded-2xl bg-slate-900/70 border border-slate-800/80 backdrop-blur-xl p-4 sm:p-5 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
-          <div class="flex items-start justify-between gap-3">
-            <div class="min-w-0">
-              <h3 class="font-semibold text-slate-50">AI Engineer · ROYALX LLC</h3>
-              <p class="text-xs text-slate-400 mt-1">Remote · Dhaka, Bangladesh · Aug 2025 – Nov 2025 · Part-time</p>
-            </div>
-            <span class="text-[11px] px-2 py-0.5 rounded-full bg-sky-500/20 text-sky-300 border border-sky-500/40 whitespace-nowrap">LLM / RAG</span>
-          </div>
-          <ul class="mt-3 text-sm text-slate-200 space-y-1.5">
-            <li>Built LLM apps (OpenAI, Groq, HF) with LangChain/LlamaIndex for generation, summarization, and chatbots.</li>
-            <li>Designed multimodal RAG pipelines to handle text + figures with improved retrieval accuracy.</li>
-            <li>Fine‑tuned transformers for QA, classification, and document understanding tasks.</li>
-            <li>Developed agents for reasoning‑heavy, multi‑step workflows and automation.</li>
-            <li>Deployed production APIs/UIs with FastAPI, Flask, Streamlit, and CI/CD.</li>
-          </ul>
-        </article>
-
-        <!-- Ai Devlop -->
-        <article class="group rounded-2xl bg-slate-900/70 border border-slate-800/80 backdrop-blur-xl p-4 sm:p-5 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
-          <div class="flex items-start justify-between gap-3">
-            <div class="min-w-0">
-              <h3 class="font-semibold text-slate-50">AI Tutor · Ai Devlop</h3>
-              <p class="text-xs text-slate-400 mt-1">Remote · Dhaka, Bangladesh · Apr 2025 – Aug 2025 · Part-time</p>
-            </div>
-            <span class="text-[11px] px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 whitespace-nowrap">Teaching</span>
-          </div>
-          <ul class="mt-3 text-sm text-slate-200 space-y-1.5">
-            <li>Taught 100+ students statistics, EDA, ML, and deep learning through practical labs.</li>
-            <li>Created structured curricula, capstones, and personalized mentoring.</li>
-            <li>Guided students to build and deploy end‑to‑end ML solutions.</li>
-          </ul>
-        </article>
-      </div>
-    </section>
-
-    <!-- Featured projects -->
-    <section id="projects" class="mb-10 sm:mb-14" data-aos="fade-up" data-aos-duration="800">
-      <div class="flex items-center justify-between mb-4">
-        <h2 class="text-xl sm:text-2xl font-semibold">Featured projects</h2>
-        <div class="h-px flex-1 ml-4 bg-gradient-to-r from-slate-600 via-slate-700 to-transparent"></div>
-      </div>
-
-      <p class="text-xs text-slate-400 mb-4">Each card includes code, live app, and a demo video.</p>
-
-      <div class="grid gap-5 grid-cols-1 sm:grid-cols-2 xl:grid-cols-3">
-        <!-- 1 -->
-        <article class="group rounded-2xl bg-slate-900/70 border border-slate-800/80 p-4 sm:p-5 backdrop-blur-xl transition-all hover:-translate-y-1 hover:shadow-xl">
-          <div class="flex items-center justify-between">
-            <p class="text-xs text-slate-400 mb-1">Regression · Flight Ticket</p>
-            <span class="text-[11px] px-2 py-0.5 rounded-full bg-sky-500/20 text-sky-300 border border-sky-500/40">Machine Learning</span>
-          </div>
-          <h3 class="font-semibold text-slate-50">Indian Flight Price Prediction</h3>
-          <p class="text-xs text-slate-400 mt-1">BaggingRegressor · 300k+ rows</p>
-          <p class="mt-2 text-sm text-slate-200">High‑accuracy price model (≈ 99.7%) with feature engineering, preprocessing, and CI/CD deployment.</p>
-          <div class="mt-3 flex flex-wrap gap-2 text-[11px]">
-            <span class="px-2 py-1 rounded-full bg-slate-800/80 border border-slate-700 text-slate-200">scikit‑learn</span>
-            <span class="px-2 py-1 rounded-full bg-slate-800/80 border border-slate-700 text-slate-200">Pandas</span>
-            <span class="px-2 py-1 rounded-full bg-slate-800/80 border border-slate-700 text-slate-200">Numpy</span>
-            <span class="px-2 py-1 rounded-full bg-slate-800/80 border border-slate-700 text-slate-200">Matplotlib</span>
-            <span class="px-2 py-1 rounded-full bg-slate-800/80 border border-slate-700 text-slate-200">Seaborn</span>
-            <span class="px-2 py-1 rounded-full bg-slate-800/80 border border-slate-700 text-slate-200">Plotly</span>
-            <span class="px-2 py-1 rounded-full bg-slate-800/80 border border-slate-700 text-slate-200">Flask</span>
-            <span class="px-2 py-1 rounded-full bg-slate-800/80 border border-slate-700 text-slate-200">Git</span>
-            <span class="px-2 py-1 rounded-full bg-slate-800/80 border border-slate-700 text-slate-200">Github Action</span>
-            <span class="px-2 py-1 rounded-full bg-slate-800/80 border border-slate-700 text-slate-200">Render</span>
-            <span class="px-2 py-1 rounded-full bg-slate-800/80 border border-slate-700 text-slate-200">Moduler Coding</span>
-
-          </div>
-          <div class="mt-3 flex flex-wrap gap-3 text-xs">
-            <a href="https://github.com/aziz-ashfak/Indian-Flight-Price-Prediction" class="text-sky-300 hover:text-sky-200">Code ↗</a>
-            <a href="https://indian-flight-price-prediction.onrender.com/" class="text-sky-300 hover:text-sky-200">Live ↗</a>
-            <a href="https://drive.google.com/file/d/1PZ9P_3isKrBiDQObdkp2_2W33csF3Eu6/view?usp=sharing" class="inline-flex items-center gap-1 text-emerald-300 hover:text-emerald-200">▶ Demo</a>
-          </div>
-        </article>
-
-        <!-- 2 -->
-        <article class="group rounded-2xl bg-slate-900/70 border border-slate-800/80 p-4 sm:p-5 backdrop-blur-xl transition-all hover:-translate-y-1 hover:shadow-xl">
-          <div class="flex items-center justify-between">
-            <p class="text-xs text-slate-400 mb-1">Classification · Healthcare</p>
-            <span class="text-[11px] px-2 py-0.5 rounded-full bg-purple-500/20 text-purple-300 border border-purple-500/40">Machine Learning</span>
-          </div>
-          <h3 class="font-semibold text-slate-50">Thyroid Disease Prediction</h3>
-          <p class="text-xs text-slate-400 mt-1">RandomForest · Render</p>
-          <p class="mt-2 text-sm text-slate-200">≈ 98.7% accuracy with tuned hyperparameters and an end‑to‑end inference pipeline.</p>
-          <div class="mt-3 flex flex-wrap gap-2 text-[11px]">
-            <span class="px-2 py-1 rounded-full bg-slate-800/80 border border-slate-700 text-slate-200">scikit‑learn</span>
-            <span class="px-2 py-1 rounded-full bg-slate-800/80 border border-slate-700 text-slate-200">Pandas</span>
-            <span class="px-2 py-1 rounded-full bg-slate-800/80 border border-slate-700 text-slate-200">Numpy</span>
-            <span class="px-2 py-1 rounded-full bg-slate-800/80 border border-slate-700 text-slate-200">Matplotlib</span>
-            <span class="px-2 py-1 rounded-full bg-slate-800/80 border border-slate-700 text-slate-200">Seaborn</span>
-            <span class="px-2 py-1 rounded-full bg-slate-800/80 border border-slate-700 text-slate-200">Plotly</span>
-            <span class="px-2 py-1 rounded-full bg-slate-800/80 border border-slate-700 text-slate-200">Flask</span>
-            <span class="px-2 py-1 rounded-full bg-slate-800/80 border border-slate-700 text-slate-200">Git</span>
-            <span class="px-2 py-1 rounded-full bg-slate-800/80 border border-slate-700 text-slate-200">Github Action</span>
-            <span class="px-2 py-1 rounded-full bg-slate-800/80 border border-slate-700 text-slate-200">Render</span>
-            <span class="px-2 py-1 rounded-full bg-slate-800/80 border border-slate-700 text-slate-200">Moduler Coding</span>
-
-          </div>
-          <div class="mt-3 flex flex-wrap gap-3 text-xs">
-            <a href="https://github.com/aziz-ashfak/Thyroid-Disease-Prediction" class="text-sky-300 hover:text-sky-200">Code ↗</a>
-            <a href="https://thyroid-disease-prediction-yker.onrender.com/" class="text-sky-300 hover:text-sky-200">Live ↗</a>
-            <a href="https://drive.google.com/file/d/1lIAOOyIv3V8X4B-F-iPawzVqcOkI0AOa/view?usp=sharing" class="inline-flex items-center gap-1 text-emerald-300 hover:text-emerald-200">▶ Demo</a>
-          </div>
-        </article>
-
-        <!-- 3 -->
-        <article class="group rounded-2xl bg-slate-900/70 border border-slate-800/80 p-4 sm:p-5 backdrop-blur-xl transition-all hover:-translate-y-1 hover:shadow-xl">
-          <div class="flex items-center justify-between">
-            <p class="text-xs text-slate-400 mb-1">Computer Vision</p>
-            <span class="text-[11px] px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/40">Deep Learning</span>
-          </div>
-          <h3 class="font-semibold text-slate-50">Brain Tumor Detection</h3>
-          <p class="text-xs text-slate-400 mt-1">ResNet152V2 / DenseNet121</p>
-          <p class="mt-2 text-sm text-slate-200">≈ 98.5% accuracy on MRI images; exported to ONNX for fast web inference.</p>
-          <div class="mt-3 flex flex-wrap gap-2 text-[11px]">
-            <span class="px-2 py-1 rounded-full bg-slate-800/80 border border-slate-700 text-slate-200">TensorFlow</span>
-            <span class="px-2 py-1 rounded-full bg-slate-800/80 border border-slate-700 text-slate-200">Keras</span>
-            <span class="px-2 py-1 rounded-full bg-slate-800/80 border border-slate-700 text-slate-200">Transfer Learning</span>
-            <span class="px-2 py-1 rounded-full bg-slate-800/80 border border-slate-700 text-slate-200">MLFlow</span>
-            <span class="px-2 py-1 rounded-full bg-slate-800/80 border border-slate-700 text-slate-200">ONNX</span>
-            <span class="px-2 py-1 rounded-full bg-slate-800/80 border border-slate-700 text-slate-200">Flask</span>
-            <span class="px-2 py-1 rounded-full bg-slate-800/80 border border-slate-700 text-slate-200">Git</span>
-            <span class="px-2 py-1 rounded-full bg-slate-800/80 border border-slate-700 text-slate-200">Github Action</span>
-            <span class="px-2 py-1 rounded-full bg-slate-800/80 border border-slate-700 text-slate-200">Render</span>
-            <span class="px-2 py-1 rounded-full bg-slate-800/80 border border-slate-700 text-slate-200">Moduler Coding</span>
-          </div>
-          <div class="mt-3 flex flex-wrap gap-3 text-xs">
-            <a href="https://github.com/aziz-ashfak/Brain-Tumor-Detection" class="text-sky-300 hover:text-sky-200">Code ↗</a>
-            <a href="https://brain-tumor-detection-8yp3.onrender.com/" class="text-sky-300 hover:text-sky-200">Live ↗</a>
-            <a href="https://drive.google.com/file/d/1P72pWs6Z5F-8l6L75liqttO_Pdszl7nt/view?usp=sharing" class="inline-flex items-center gap-1 text-emerald-300 hover:text-emerald-200">▶ Demo</a>
-          </div>
-        </article>
-
-        <!-- 4 -->
-        <article class="group rounded-2xl bg-slate-900/70 border border-slate-800/80 p-4 sm:p-5 backdrop-blur-xl transition-all hover:-translate-y-1 hover:shadow-xl">
-          <div class="flex items-center justify-between">
-            <p class="text-xs text-slate-400 mb-1">GenAI · Multimodal</p>
-            <span class="text-[11px] px-2 py-0.5 rounded-full bg-pink-500/20 text-pink-300 border border-pink-500/40">Multimodal RAG</span>
-          </div>
-          <h3 class="font-semibold text-slate-50">Multimodal Research Paper Analyst</h3>
-          <p class="text-xs text-slate-400 mt-1">LLM · Streamlit</p>
-          <p class="mt-2 text-sm text-slate-200">Reads PDFs & figures, summarizes sections, and exports to Word/PDF/CSV/Markdown.</p>
-          <div class="mt-3 flex flex-wrap gap-2 text-[11px]">
-            <span class="px-2 py-1 rounded-full bg-slate-800/80 border border-slate-700 text-slate-200">LangChain</span>
-            <span class="px-2 py-1 rounded-full bg-slate-800/80 border border-slate-700 text-slate-200">Groq</span>
-            <span class="px-2 py-1 rounded-full bg-slate-800/80 border border-slate-700 text-slate-200">Llama</span>
-            <span class="px-2 py-1 rounded-full bg-slate-800/80 border border-slate-700 text-slate-200">OpenAI</span>
-            <span class="px-2 py-1 rounded-full bg-slate-800/80 border border-slate-700 text-slate-200">Transformer</span>
-            <span class="px-2 py-1 rounded-full bg-slate-800/80 border border-slate-700 text-slate-200">FAISS</span>
-            <span class="px-2 py-1 rounded-full bg-slate-800/80 border border-slate-700 text-slate-200">Hugging-Face</span>
-            <span class="px-2 py-1 rounded-full bg-slate-800/80 border border-slate-700 text-slate-200">Streamlit</span>
-            <span class="px-2 py-1 rounded-full bg-slate-800/80 border border-slate-700 text-slate-200">Moduler Coding</span>
-      
-          </div>
-          <div class="mt-3 flex flex-wrap gap-3 text-xs">
-            <a href="https://github.com/aziz-ashfak/ResearchPaperAnalyst" class="text-sky-300 hover:text-sky-200">Code ↗</a>
-            <a href="https://research-paper-analyst.onrender.com/" class="text-sky-300 hover:text-sky-200">Live ↗</a>
-            <a href="https://drive.google.com/file/d/1yYUWz3_hMLt_eUVR8UNS7g4T9Z8S3zT9/view?usp=sharing" class="inline-flex items-center gap-1 text-emerald-300 hover:text-emerald-200">▶ Demo</a>
-          </div>
-        </article>
-
-        <!-- 5 -->
-        <article class="group rounded-2xl bg-slate-900/70 border border-slate-800/80 p-4 sm:p-5 backdrop-blur-xl transition-all hover:-translate-y-1 hover:shadow-xl">
-          <div class="flex items-center justify-between">
-            <p class="text-xs text-slate-400 mb-1">GenAI · RAG</p>
-            <span class="text-[11px] px-2 py-0.5 rounded-full bg-orange-500/20 text-orange-300 border border-orange-500/40">RAG</span>
-          </div>
-          <h3 class="font-semibold text-slate-50">QnA RAG Bot for PDFs</h3>
-          <p class="text-xs text-slate-400 mt-1">FastAPI · LangChain</p>
-          <p class="mt-2 text-sm text-slate-200">Figure‑aware retrieval, modular pipelines, multi‑format export for research workflows.</p>
-          <div class="mt-3 flex flex-wrap gap-2 text-[11px]">
-             <span class="px-2 py-1 rounded-full bg-slate-800/80 border border-slate-700 text-slate-200">LangChain</span>
-            <span class="px-2 py-1 rounded-full bg-slate-800/80 border border-slate-700 text-slate-200">Groq</span>
-            <span class="px-2 py-1 rounded-full bg-slate-800/80 border border-slate-700 text-slate-200">Llama</span>
-            <span class="px-2 py-1 rounded-full bg-slate-800/80 border border-slate-700 text-slate-200">OpenAI</span>
-            <span class="px-2 py-1 rounded-full bg-slate-800/80 border border-slate-700 text-slate-200">Transformer</span>
-            <span class="px-2 py-1 rounded-full bg-slate-800/80 border border-slate-700 text-slate-200">FAISS</span>
-            <span class="px-2 py-1 rounded-full bg-slate-800/80 border border-slate-700 text-slate-200">ChromaDB</span>
-            <span class="px-2 py-1 rounded-full bg-slate-800/80 border border-slate-700 text-slate-200">Hugging-Face</span>
-            <span class="px-2 py-1 rounded-full bg-slate-800/80 border border-slate-700 text-slate-200">FastAPI</span>
-            <span class="px-2 py-1 rounded-full bg-slate-800/80 border border-slate-700 text-slate-200">Moduler Coding</span>
-          </div>
-          <div class="mt-3 flex flex-wrap gap-3 text-xs">
-            <a href="https://github.com/aziz-ashfak/QNARAG" class="text-sky-300 hover:text-sky-200">Code ↗</a>
-            <a href="https://qnarag.onrender.com/" class="text-sky-300 hover:text-sky-200">Live ↗</a>
-            <a href="https://drive.google.com/file/d/1G6Nj1lr-nfYYVdk4IjcV7d6_kn31bOAu/view?usp=sharing" class="inline-flex items-center gap-1 text-emerald-300 hover:text-emerald-200">▶ Demo</a>
-          </div>
-        </article>
-
-        <!-- 6 -->
-        <article class="group rounded-2xl bg-slate-900/70 border border-slate-800/80 p-4 sm:p-5 backdrop-blur-xl transition-all hover:-translate-y-1 hover:shadow-xl">
-          <div class="flex items-center justify-between">
-            <p class="text-xs text-slate-400 mb-1">Computer Vision · Real‑time</p>
-            <span class="text-[11px] px-2 py-0.5 rounded-full bg-lime-500/20 text-lime-300 border border-lime-500/40">Object Detection</span>
-          </div>
-          <h3 class="font-semibold text-slate-50">Face Mask Detection</h3>
-          <p class="text-xs text-slate-400 mt-1">ONNX · Flask</p>
-          <p class="mt-2 text-sm text-slate-200">Real‑time detector on a Kaggle dataset using YOLO; ONNX export, served via Flask app.</p>
-          <div class="mt-3 flex flex-wrap gap-2 text-[11px]">
-            <span class="px-2 py-1 rounded-full bg-slate-800/80 border border-slate-700 text-slate-200">TensorFlow</span>
-            <span class="px-2 py-1 rounded-full bg-slate-800/80 border border-slate-700 text-slate-200">Keras</span>
-            <span class="px-2 py-1 rounded-full bg-slate-800/80 border border-slate-700 text-slate-200">YOLO</span>
-            <span class="px-2 py-1 rounded-full bg-slate-800/80 border border-slate-700 text-slate-200">Pandas</span>
-            <span class="px-2 py-1 rounded-full bg-slate-800/80 border border-slate-700 text-slate-200">Numpy</span>
-            <span class="px-2 py-1 rounded-full bg-slate-800/80 border border-slate-700 text-slate-200">MLFlow</span>
-            <span class="px-2 py-1 rounded-full bg-slate-800/80 border border-slate-700 text-slate-200">ONNX</span>
-            <span class="px-2 py-1 rounded-full bg-slate-800/80 border border-slate-700 text-slate-200">Flask</span>
-            <span class="px-2 py-1 rounded-full bg-slate-800/80 border border-slate-700 text-slate-200">Git</span>
-            <span class="px-2 py-1 rounded-full bg-slate-800/80 border border-slate-700 text-slate-200">Github Action</span>
-            <span class="px-2 py-1 rounded-full bg-slate-800/80 border border-slate-700 text-slate-200">Render</span>
-            <span class="px-2 py-1 rounded-full bg-slate-800/80 border border-slate-700 text-slate-200">Moduler Coding</span>
-          </div>
-          <div class="mt-3 flex flex-wrap gap-3 text-xs">
-            <a href="https://github.com/aziz-ashfak/Face-Mask-Detection" class="text-sky-300 hover:text-sky-200">Code ↗</a>
-            <a href="https://face-mask-detection.onrender.com/" class="text-sky-300 hover:text-sky-200">Live ↗</a>
-            <a href="https://drive.google.com/file/d/1STQNxY3LnA42vZn6pB8eS09cJqejd8QD/view?usp=sharing" class="inline-flex items-center gap-1 text-emerald-300 hover:text-emerald-200">▶ Demo</a>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- Research -->
-    <section id="research" class="mb-10 sm:mb-14" data-aos="fade-up" data-aos-duration="800">
-      <div class="flex items-center justify-between mb-4">
-        <h2 class="text-xl sm:text-2xl font-semibold">Research focus</h2>
-        <div class="h-px flex-1 ml-4 bg-gradient-to-r from-slate-600 via-slate-700 to-transparent"></div>
-      </div>
-
-      <div class="grid gap-4 sm:gap-5 grid-cols-1 md:grid-cols-3 text-sm text-slate-200">
-        <article class="rounded-2xl bg-slate-900/70 border border-slate-800/80 backdrop-blur-xl p-4">
-          <h3 class="font-semibold text-slate-50 mb-1">U‑Net for Human Segmentation</h3>
-          <p class="text-xs text-slate-400 mb-1">Encoder–decoder optimization · ICRA 2026 (proposed)</p>
-          <p>Optimizing U‑Net architectures for human segmentation enhances accuracy and efficiency in computer vision tasks. This research advances robust models for healthcare, surveillance, and real‑world applications.</p>
-        </article>
-
-     
-
-        <article class="rounded-2xl bg-slate-900/70 border border-slate-800/80 backdrop-blur-xl p-4">
-          <h3 class="font-semibold text-slate-50 mb-1">Benchmarking Large Language Models on Bangla to advance low‑resource multilingual NLP evaluation.</h3>
-          <p class="text-xs text-slate-400 mb-1">GenAI · LLMs</p>
-          <p>Benchmarking Large Language Models on Bangla highlights the challenges of low‑resource multilingual NLP. This work advances inclusive evaluation frameworks to improve performance and accessibility for underrepresented languages.</p>
-        </article>
-      </div>
-    </section>
-
-    <!-- Skills -->
-    <section id="skills" class="mb-10 sm:mb-12" data-aos="fade-up" data-aos-duration="800">
-      <div class="flex items-center justify-between mb-4">
-        <h2 class="text-xl sm:text-2xl font-semibold">Technical stack</h2>
-        <div class="h-px flex-1 ml-4 bg-gradient-to-r from-slate-600 via-slate-700 to-transparent"></div>
-      </div>
-
-      <div class="grid gap-4 lg:grid-cols-3 text-sm text-slate-200">
-        <!-- Core ML/AI -->
-        <article class="rounded-2xl bg-slate-900/70 border border-slate-800/80 backdrop-blur-xl p-4 sm:p-5">
-          <p class="text-xs uppercase tracking-[0.18em] text-slate-400 mb-2">Core ML / AI</p>
-          <p class="font-semibold text-slate-50 mb-2">Languages & ML/DL</p>
-          <div class="flex flex-wrap gap-2 text-[11px]">
-            <span class="px-2 py-1 rounded-full bg-slate-800 border border-slate-700">Python</span>
-            <span class="px-2 py-1 rounded-full bg-slate-800 border border-slate-700">SQL</span>
-            <span class="px-2 py-1 rounded-full bg-slate-800 border border-slate-700">R</span>
-            <span class="px-2 py-1 rounded-full bg-slate-800 border border-slate-700">PyTorch</span>
-            <span class="px-2 py-1 rounded-full bg-slate-800 border border-slate-700">TensorFlow</span>
-            <span class="px-2 py-1 rounded-full bg-slate-800 border border-slate-700">Keras</span>
-            <span class="px-2 py-1 rounded-full bg-slate-800 border border-slate-700">scikit‑learn</span>
-            <span class="px-2 py-1 rounded-full bg-slate-800 border border-slate-700">OpenCV</span>
-            <span class="px-2 py-1 rounded-full bg-slate-800 border border-slate-700">MLflow</span>
-            <span class="px-2 py-1 rounded-full bg-slate-800 border border-slate-700">C(basic)</span>
-            <span class="px-2 py-1 rounded-full bg-slate-800 border border-slate-700">Java(basic)</span>
-          </div>
-        </article>
-
-        <!-- GenAI & RAG -->
-        <article class="rounded-2xl bg-slate-900/70 border border-slate-800/80 backdrop-blur-xl p-4 sm:p-5">
-          <p class="text-xs uppercase tracking-[0.18em] text-slate-400 mb-2">GenAI · LLMs · RAG</p>
-          <p class="font-semibold text-slate-50 mb-2">LLM & retrieval stack</p>
-          <div class="flex flex-wrap gap-2 text-[11px]">
-            
-            <span class="px-2 py-1 rounded-full bg-slate-800 border border-slate-700">OpenAI API</span>
-            <span class="px-2 py-1 rounded-full bg-slate-800 border border-slate-700">Hugging Face</span>
-            <span class="px-2 py-1 rounded-full bg-slate-800 border border-slate-700">Groq</span>
-            <span class="px-2 py-1 rounded-full bg-slate-800 border border-slate-700">LangChain</span>
-            <span class="px-2 py-1 rounded-full bg-slate-800 border border-slate-700">LlamaIndex</span>
-            <span class="px-2 py-1 rounded-full bg-slate-800 border border-slate-700">LangGraph</span>
-            <span class="px-2 py-1 rounded-full bg-slate-800 border border-slate-700">CrewAI</span>
-            <span class="px-2 py-1 rounded-full bg-slate-800 border border-slate-700">n8n</span>
-            <span class="px-2 py-1 rounded-full bg-slate-800 border border-slate-700">FAISS</span>
-            <span class="px-2 py-1 rounded-full bg-slate-800 border border-slate-700">ChromaDB</span>
-            <span class="px-2 py-1 rounded-full bg-slate-800 border border-slate-700">Pinecone</span>
-          </div>
-        </article>
-
-        <!-- Deployment & Data -->
-        <article class="rounded-2xl bg-slate-900/70 border border-slate-800/80 backdrop-blur-xl p-4 sm:p-5">
-          <p class="text-xs uppercase tracking-[0.18em] text-slate-400 mb-2">Deployment · Data</p>
-          <p class="font-semibold text-slate-50 mb-2">MLOps & analytics</p>
-          <div class="flex flex-wrap gap-2 text-[11px] mb-2">
-            <span class="px-2 py-1 rounded-full bg-slate-800 border border-slate-700">FastAPI</span>
-            <span class="px-2 py-1 rounded-full bg-slate-800 border border-slate-700">Flask</span>
-            <span class="px-2 py-1 rounded-full bg-slate-800 border border-slate-700">Streamlit</span>
-            <span class="px-2 py-1 rounded-full bg-slate-800 border border-slate-700">Gradio</span>
-            <span class="px-2 py-1 rounded-full bg-slate-800 border border-slate-700">ONNX</span>
-            <span class="px-2 py-1 rounded-full bg-slate-800 border border-slate-700">Git</span>
-            <span class="px-2 py-1 rounded-full bg-slate-800 border border-slate-700">GitHub Actions</span>
-            <span class="px-2 py-1 rounded-full bg-slate-800 border border-slate-700">Render</span>
-            <span class="px-2 py-1 rounded-full bg-slate-800 border border-slate-700">Kaggle</span>
-            <span class="px-2 py-1 rounded-full bg-slate-800 border border-slate-700">Google Colab</span>
-          </div>
-          <div class="flex flex-wrap gap-2 text-[11px]">
-            <span class="px-2 py-1 rounded-full bg-slate-800 border border-slate-700">Pandas</span>
-            <span class="px-2 py-1 rounded-full bg-slate-800 border border-slate-700">NumPy</span>
-            <span class="px-2 py-1 rounded-full bg-slate-800 border border-slate-700">Matplotlib</span>
-            <span class="px-2 py-1 rounded-full bg-slate-800 border border-slate-700">Seaborn</span>
-            <span class="px-2 py-1 rounded-full bg-slate-800 border border-slate-700">Plotly</span>
-          </div>
-        </article>
-      </div>
-
-<!-- DSA Achievement Card -->
-<div class="mt-6 rounded-2xl bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 border border-indigo-500/30 backdrop-blur-xl p-6 text-sm text-slate-200 shadow-lg shadow-indigo-500/10" data-aos="fade-up" data-aos-duration="800">
-  <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
-    <p class="text-xs uppercase tracking-[0.18em] text-indigo-400 font-semibold">DSA &amp; Problem Solving</p>
-    <span class="text-[11px] px-2 py-0.5 rounded-full bg-indigo-500/20 border border-indigo-500/50 text-indigo-300 font-medium shadow-sm">Milestone Achieved</span>
-  </div>
-  <p class="mb-4 leading-relaxed text-[15px] text-slate-100">
-    Completed most core Data Structures & Algorithms with hands‑on practice and problem‑solving rigor.
-  </p>
-  
-  <!-- Badge Grid -->
-  <div class="flex flex-wrap gap-2 mb-4">
-    <span class="px-3 py-1 rounded-full bg-sky-500/20 text-sky-300 text-xs font-medium">Arrays</span>
-    <span class="px-3 py-1 rounded-full bg-purple-500/20 text-purple-300 text-xs font-medium">Strings</span>
-    <span class="px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-300 text-xs font-medium">Hash Maps</span>
-    <span class="px-3 py-1 rounded-full bg-pink-500/20 text-pink-300 text-xs font-medium">Linked Lists</span>
-    <span class="px-3 py-1 rounded-full bg-yellow-500/20 text-yellow-300 text-xs font-medium">Trees</span>
-    <span class="px-3 py-1 rounded-full bg-orange-500/20 text-orange-300 text-xs font-medium">Graphs</span>
-    <span class="px-3 py-1 rounded-full bg-red-500/20 text-red-300 text-xs font-medium">Recursion</span>
-    <span class="px-3 py-1 rounded-full bg-teal-500/20 text-teal-300 text-xs font-medium">Sorting/Search</span>
-    <span class="px-3 py-1 rounded-full bg-indigo-500/20 text-indigo-300 text-xs font-medium">Dynamic Programming</span>
-  </div>
-  
-  <p class="text-xs text-slate-400">
-    LeetCode: <a href="https://leetcode.com/azizashfak" class="text-indigo-300 hover:text-indigo-200 underline underline-offset-2">leetcode.com/azizashfak</a>
-  </p>
-</div>
-
-
-
-    </section>
-
-    <!-- Achievements -->
-    <section id="achievements" class="mb-10 sm:mb-12" data-aos="fade-up" data-aos-duration="800">
-      <div class="flex items-center justify-between mb-4">
-        <h2 class="text-xl sm:text-2xl font-semibold">Achievements</h2>
-        <div class="h-px flex-1 ml-4 bg-gradient-to-r from-slate-600 via-slate-700 to-transparent"></div>
-      </div>
-
-      <div class="grid gap-4 md:grid-cols-2 text-sm text-slate-200">
-        <article class="rounded-2xl bg-slate-900/70 border border-slate-800/80 backdrop-blur-xl p-4">
-          <h3 class="font-semibold text-slate-50 mb-1">Teaching & Mentoring</h3>
-          <p class="text-xs text-slate-400 mb-1">100+ students · Capstone guidance</p>
-          <p>Project‑based curricula; mentored cohorts to ship apps (ML APIs, dashboards, research notebooks).</p>
-        </article>
-
-        <article class="rounded-2xl bg-slate-900/70 border border-slate-800/80 backdrop-blur-xl p-4">
-          <h3 class="font-semibold text-slate-50 mb-1">Open‑source & Community</h3>
-          <p class="text-xs text-slate-400 mb-1">Reusable notebooks · Annotated guides</p>
-          <p>Published guides across ML, CV, and RAG, focused on reproducibility and explainability.</p>
-        </article>
-      </div>
-    </section>
-
-    <!-- Testimonials -->
-    <section id="testimonials" class="mb-10 sm:mb-12" data-aos="fade-up" data-aos-duration="800">
-      <div class="flex items-center justify-between mb-4">
-        <h2 class="text-xl sm:text-2xl font-semibold">Testimonials</h2>
-    <div class="h-px flex-1 ml-4 bg-gradient-to-r from-slate-600 via-slate-700 to-transparent"></div>
-      </div>
-
-      <div class="grid gap-4 md:grid-cols-2">
-        <blockquote class="rounded-2xl bg-slate-900/70 border border-slate-800/80 backdrop-blur-xl p-5">
-          <p class="text-slate-200">“Aziz’s mentoring transformed our cohort’s confidence. His annotated notebooks made complex ML concepts approachable.”</p>
-          <footer class="mt-3 text-xs text-slate-400">— Student, Ai Devlop</footer>
-        </blockquote>
-        <blockquote class="rounded-2xl bg-slate-900/70 border border-slate-800/80 backdrop-blur-xl p-5">
-          <p class="text-slate-200">“Production‑first thinking. He ships reliable pipelines and explains tradeoffs with refreshing clarity.”</p>
-          <footer class="mt-3 text-xs text-slate-400">— Collaborator, ROYALX LLC</footer>
-        </blockquote>
-      </div>
-    </section>
-
-    <!-- Blog -->
-    <section id="blog" class="mb-10 sm:mb-12" data-aos="fade-up" data-aos-duration="800">
-      <div class="flex items-center justify-between mb-4">
-        <h2 class="text-xl sm:text-2xl font-semibold">Blog & notes</h2>
-        <div class="h-px flex-1 ml-4 bg-gradient-to-r from-slate-600 via-slate-700 to-transparent"></div>
-      </div>
-
-      <div class="grid gap-4 md:grid-cols-2 xl:grid-cols-3 text-sm text-slate-200">
-        <article class="rounded-2xl bg-slate-900/70 border border-slate-800/80 backdrop-blur-xl p-4">
-          <h3 class="font-semibold text-slate-50 mb-1">End to End ML Notebook</h3>
-          <p class="text-xs text-slate-400 mb-1">scikit‑learn · Data Analytics</p>
-          <p>Developed an end‑to‑end Flight Price Prediction pipeline on Kaggle, covering data preprocessing, feature engineering, model training, and evaluation. Delivered a reproducible notebook with clear insights and deployment‑ready predictions for real‑world use cases.</p>
-          <a href="https://www.kaggle.com/code/azizashfak/flight-price-prediction" class="mt-2 inline-block text-sky-300 hover:text-sky-200 text-xs">Read more ↗</a>
-        </article>
-
-        <article class="rounded-2xl bg-slate-900/70 border border-slate-800/80 backdrop-blur-xl p-4">
-          <h3 class="font-semibold text-slate-50 mb-1">End to End DL Notebook</h3>
-          <p class="text-xs text-slate-400 mb-1">TensorFlow · Transfer Learning</p>
-          <p>Developed an end‑to‑end Brain Tumor Detection pipeline on Kaggle using CNNs and transfer learning. The notebook covers preprocessing, model training, evaluation, and explainable visualizations to enhance clinical interpretability.</p>
-          <a href="https://www.kaggle.com/code/azizashfak/brain-tumor-detection-full-notebook" class="mt-2 inline-block text-sky-300 hover:text-sky-200 text-xs">Read more ↗</a>
-        </article>
-
-        <article class="rounded-2xl bg-slate-900/70 border border-slate-800/80 backdrop-blur-xl p-4">
-          <h3 class="font-semibold text-slate-50 mb-1">EDA</h3>
-          <p class="text-xs text-slate-400 mb-1">Pandas · NumPy · Data visualizations</p>
-          <p>Performed exploratory data analysis on Netflix titles, uncovering trends in genres, release years, and content distribution. Delivered a reproducible notebook with clear visualizations and insights into platform growth and audience patterns.</p>
-          <a href="https://www.kaggle.com/code/azizashfak/netflix-eda" class="mt-2 inline-block text-sky-300 hover:text-sky-200 text-xs">Read more ↗</a>
-        </article>
-      </div>
-    </section>
-
-    <!-- Future work -->
-    <section id="future-work" class="mb-10 sm:mb-12" data-aos="fade-up" data-aos-duration="800">
-      <div class="flex items-center justify-between mb-4">
-        <h2 class="text-xl sm:text-2xl font-semibold">Future work interests</h2>
-        <div class="h-px flex-1 ml-4 bg-gradient-to-r from-slate-600 via-slate-700 to-transparent"></div>
-      </div>
-
-      <div class="grid gap-4 md:grid-cols-2 text-sm text-slate-200">
-        <article class="rounded-2xl bg-slate-900/70 border border-slate-800/80 backdrop-blur-xl p-4">
-          <h3 class="font-semibold text-slate-50 mb-1">Explainable AI in healthcare</h3>
-          <p class="text-xs text-slate-400 mb-1">Grad‑CAM · SHAP · Clinical trust</p>
-          <p>Interpretable diagnostic models for cancer and brain imaging to enhance clinician confidence and decision support.</p>
-        </article>
-
-        <article class="rounded-2xl bg-slate-900/70 border border-slate-800/80 backdrop-blur-xl p-4">
-          <h3 class="font-semibold text-slate-50 mb-1">Multilingual NLP for Bangla</h3>
-          <p class="text-xs text-slate-400 mb-1">Benchmarking · Data curation · Evaluation</p>
-          <p>Robust benchmarks and datasets for underrepresented languages focusing on retrieval, reasoning, and fairness.</p>
-        </article>
-      </div>
-    </section>
-
-    <!-- Future project ideas -->
-    <section id="future-projects" class="mb-10 sm:mb-12" data-aos="fade-up" data-aos-duration="800">
-      <div class="flex items-center justify-between mb-4">
-        <h2 class="text-xl sm:text-2xl font-semibold">Future project ideas</h2>
-        <div class="h-px flex-1 ml-4 bg-gradient-to-r from-slate-600 via-slate-700 to-transparent"></div>
-      </div>
-
-      <div class="grid gap-4 md:grid-cols-2 text-sm text-slate-200">
-        <article class="rounded-2xl bg-slate-900/70 border border-slate-800/80 backdrop-blur-xl p-4">
-         <p class="text-xs text-slate-400 mb-1">Idea · Not started yet</p>
-        <h3 class="font-semibold text-slate-50 mb-1">Agentic RAG Evaluator</h3>
-        <p class="mb-2">
-          Stress‑test RAG systems with adversarial questions, hallucination checks, and figure‑aware retrieval metrics.
+    <!-- ============ CONTACT ============ -->
+    <section id="contact" class="block">
+      <div class="sec-head"><h2>Contact</h2></div>
+      <div class="card call reveal">
+        <h3>Let's work together</h3>
+        <p class="t2">
+          I'd like to hear from faculty recruiting PhD or MS students for Fall 2027, from researchers who want to
+          collaborate on multimodal VQA, RAG or LLM evaluation, and from anyone who can help with GPU compute.
         </p>
-        <p class="text-xs text-slate-400">
-          Planned stack: Llama 3, LangGraph, FastAPI, FAISS, Weaviate, Postgres, LangChain, OpenAI API, Hugging Face Transformers, Docker, GitHub Actions, Streamlit, React, Tailwind CSS.
-        </p>
-
-        </article>
-
-        <article class="rounded-2xl bg-slate-900/70 border border-slate-800/80 backdrop-blur-xl p-4">
-          <p class="text-xs text-slate-400 mb-1">Idea · Not started yet</p>
-          <h3 class="font-semibold text-slate-50 mb-1">Intelligent Video Calling Agent</h3>
-          <p class="mb-2">Build a web-based agent that enables real-time video calling with integrated AI features like transcription, summarization, emotion detection, or even retrieval-augmented responses.</p>
-          <p class="text-xs text-slate-400">Stack : WebRTC, MediaPipe,,Whisper, LangChain, Hugging Face Transformers, FAISS, GPT-4,FastAPI,WebSockets, Redis, Postgres, Deepgram, OpenAI API</p>
-        </article>
-      </div>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact" class="mb-10 sm:mb-12" data-aos="fade-up" data-aos-duration="800">
-      <div class="flex items-center justify-between mb-4">
-        <h2 class="text-xl sm:text-2xl font-semibold">Contact</h2>
-        <div class="h-px flex-1 ml-4 bg-gradient-to-r from-slate-600 via-slate-700 to-transparent"></div>
-      </div>
-
-      <div class="grid gap-6 md:grid-cols-2">
-        <div class="rounded-2xl bg-slate-900/70 border border-slate-800/80 backdrop-blur-xl p-5">
-          <p class="text-sm text-slate-200 mb-2">Prefer email?</p>
-          <a href="mailto:azizashfak@gmail.com"
-             class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-sky-500 to-purple-500 text-slate-50 font-medium shadow-lg hover:from-sky-400 hover:to-purple-400 transition-all">
-            Email Aziz
-          </a>
-          <p class="mt-3 text-xs text-slate-400">Phone: 01730644634 · Noakhali, Bangladesh</p>
+        <div class="grid g2" style="margin-top:18px">
+          <div class="need">
+            <h4>Email</h4>
+            <p><a href="mailto:aziz1516@student.nstu.edu.bd">aziz1516@student.nstu.edu.bd</a></p>
+          </div>
+          <div class="need">
+            <h4>Phone &amp; location</h4>
+            <p><a href="tel:+8801712314211">+880 1712 314211</a><br>Noakhali, Bangladesh</p>
+          </div>
         </div>
-
-        <form class="rounded-2xl bg-slate-900/70 border border-slate-800/80 backdrop-blur-xl p-5 space-y-3" action="https://formspree.io/f/yourFormId" method="POST">
-          <div>
-            <label for="name" class="block text-xs text-slate-400 mb-1">Name</label>
-            <input id="name" name="name" type="text" required
-                   class="w-full px-3 py-2 rounded-lg bg-slate-800/80 border border-slate-700 text-slate-200 focus:outline-none focus:ring-2 focus:ring-sky-500" />
-          </div>
-          <div>
-            <label for="email" class="block text-xs text-slate-400 mb-1">Email</label>
-            <input id="email" name="_replyto" type="email" required
-                   class="w-full px-3 py-2 rounded-lg bg-slate-800/80 border border-slate-700 text-slate-200 focus:outline-none focus:ring-2 focus:ring-sky-500" />
-          </div>
-          <div>
-            <label for="message" class="block text-xs text-slate-400 mb-1">Message</label>
-            <textarea id="message" name="message" rows="4" required
-                      class="w-full px-3 py-2 rounded-lg bg-slate-800/80 border border-slate-700 text-slate-200 focus:outline-none focus:ring-2 focus:ring-sky-500"></textarea>
-          </div>
-          <button type="submit"
-                  class="px-4 py-2 rounded-full bg-emerald-600 text-white hover:bg-emerald-500 transition-colors">
-            Send message
-          </button>
-          <p class="text-[11px] text-slate-400">This form uses Formspree. Replace the action URL with your form ID.</p>
-        </form>
-      </div>
-    </section>
-
-    <!-- CTA ribbon -->
-    <section class="mb-10 sm:mb-12" data-aos="fade-up" data-aos-duration="800">
-      <div class="rounded-2xl border border-slate-800/80 bg-gradient-to-r from-slate-900/70 via-slate-900/60 to-slate-900/70 backdrop-blur-xl p-5 flex flex-col sm:flex-row items-center justify-between gap-3">
-        <p class="text-sm text-slate-200">Open to roles & collaborations in LLMs, RAG, and computer vision.</p>
-        <div class="flex gap-2">
-          <a href="#projects" class="px-4 py-2 rounded-full bg-sky-600 text-white hover:bg-sky-500 transition">Explore projects</a>
-          <a href="resume/AzizAshfak.pdf" class="px-4 py-2 rounded-full bg-purple-600 text-white hover:bg-purple-500 transition">Download resume</a>
+        <div class="cta">
+          <a href="mailto:aziz1516@student.nstu.edu.bd?subject=Research%20collaboration" class="btn btn-primary">Email me</a>
+          <a href="resume/AzizAshfak.pdf" class="btn">Download CV</a>
+          <a href="https://www.linkedin.com/in/aziz-ashfak-/" target="_blank" rel="noopener" class="btn">LinkedIn</a>
         </div>
       </div>
     </section>
   </main>
 
-  <!-- Footer -->
-  <footer class="mx-auto max-w-6xl px-3 xs:px-4 sm:px-6 lg:px-8 border-t border-slate-800/80 pt-4 mt-2 mb-2 text-xs text-slate-400">
-    <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
-      <p>&copy; <span id="year"></span> Aziz Ashfak. All rights reserved.</p>
-      <p>Built with HTML + Tailwind CSS. Deployed on GitHub Pages.</p>
+  <footer class="site">
+    <div class="wrap">
+      <p>&copy; <span id="year">2026</span> Aziz Ashfak</p>
+      <p>Seeking PhD / fully funded MS · Fall 2027</p>
     </div>
-    <button id="backToTop" class="fixed bottom-5 right-5 hidden px-3 py-2 rounded-full bg-slate-900/70 border border-slate-700/70 text-slate-200 shadow-md hover:bg-slate-800/70 transition">
-      ↑ Back to top
-    </button>
   </footer>
+  <button id="backToTop" class="icon-btn" type="button">↑ Top</button>
 
-  <!-- Scripts -->
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
-    // Respect prefers-reduced-motion
-    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    if (!reduceMotion) {
-      AOS.init({ once: true, offset: 40, duration: 700, easing: 'ease-out-cubic' });
-    }
+    // Theme toggle (persists choice; falls back to system preference)
+    (function () {
+      var root = document.documentElement;
+      function current() {
+        var t = root.getAttribute('data-theme');
+        if (t) return t;
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.getElementById('themeToggle').addEventListener('click', function () {
+        var next = current() === 'dark' ? 'light' : 'dark';
+        root.setAttribute('data-theme', next);
+        try { localStorage.setItem('theme', next); } catch (e) {}
+      });
+    })();
 
-    // Theme toggle with persistence
-    const themeToggle = document.getElementById('themeToggle');
-    const root = document.documentElement;
-    function setTheme(theme) {
-      if (theme === 'dark') root.classList.add('dark');
-      else root.classList.remove('dark');
-      localStorage.setItem('theme', theme);
-    }
-    const savedTheme = localStorage.getItem('theme') || 'dark';
-    setTheme(savedTheme);
-    themeToggle.addEventListener('click', () => {
-      const newTheme = root.classList.contains('dark') ? 'light' : 'dark';
-      setTheme(newTheme);
-    });
+    // Mobile menu
+    (function () {
+      var btn = document.getElementById('menuBtn');
+      var menu = document.getElementById('mobileMenu');
+      btn.addEventListener('click', function () {
+        var open = menu.classList.toggle('open');
+        btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      });
+      menu.querySelectorAll('a').forEach(function (a) {
+        a.addEventListener('click', function () { menu.classList.remove('open'); btn.setAttribute('aria-expanded', 'false'); });
+      });
+    })();
 
-    // Mobile menu toggle
-    const menuBtn = document.getElementById('menuBtn');
-    const mobileMenu = document.getElementById('mobileMenu');
-    menuBtn?.addEventListener('click', () => {
-      mobileMenu.classList.toggle('hidden');
-    });
+    // Back to top
+    (function () {
+      var b = document.getElementById('backToTop');
+      window.addEventListener('scroll', function () { b.classList.toggle('show', window.scrollY > 700); }, { passive: true });
+      b.addEventListener('click', function () { window.scrollTo({ top: 0, behavior: 'smooth' }); });
+    })();
 
-    // Back to top button
-    const backToTop = document.getElementById('backToTop');
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 600) backToTop.classList.remove('hidden');
-      else backToTop.classList.add('hidden');
-    });
-    backToTop?.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+    // Reveal on scroll
+    (function () {
+      var els = document.querySelectorAll('.reveal');
+      if (!('IntersectionObserver' in window)) { els.forEach(function (e) { e.classList.add('in'); }); return; }
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (en) { if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); } });
+      }, { rootMargin: '0px 0px -40px 0px' });
+      els.forEach(function (e) { io.observe(e); });
+    })();
 
-    // Footer year
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
-
-  <!-- Optional: Analytics
-  <script defer data-domain="your-domain.com" src="https://plausible.io/js/script.js"></script>
-  -->
 </body>
-</html>
 </html>
