@@ -282,6 +282,7 @@
     .proj-card h3 { font-size: 16px; font-weight: 650; }
     .proj-card .sub { font-size: 13.5px; color: var(--muted); margin-top: 2px; }
     .proj-card p { margin-top: 10px; font-size: 14.5px; color: var(--text-2); }
+    @media (min-width: 760px) and (max-width: 999px) { .proj-grid { grid-template-columns: 1fr 1fr; } }
     .proj-links { margin-top: 12px; display: flex; gap: 14px; font-size: 13.5px; font-weight: 600; }
 
     /* Skills */
@@ -643,13 +644,14 @@
     <!-- ============ PROJECTS ============ -->
     <section id="projects" class="block">
       <div class="sec-head"><h2>Selected projects</h2></div>
-      <div class="grid g2">
+      <div class="grid g3 proj-grid">
         <article class="card proj-card reveal">
           <h3>Multimodal Research Paper Analyst</h3>
           <p class="sub">Multimodal RAG over paper text and figures</p>
           <p>A Groq and Llama pipeline that summarises paper text and interprets charts, served as a Streamlit app that exports to Word, PDF, CSV and Markdown.</p>
           <div class="proj-links">
             <a href="https://github.com/aziz-ashfak/ResearchPaperAnalyst" target="_blank" rel="noopener">Code ↗</a>
+            <a href="https://research-paper-analyst.onrender.com/" target="_blank" rel="noopener">Live ↗</a>
             <a href="https://drive.google.com/file/d/1yYUWz3_hMLt_eUVR8UNS7g4T9Z8S3zT9/view?usp=sharing" target="_blank" rel="noopener">Demo ↗</a>
           </div>
         </article>
@@ -661,6 +663,7 @@
           <div class="proj-links">
             <a href="https://github.com/aziz-ashfak/Brain-Tumor-Detection" target="_blank" rel="noopener">Code ↗</a>
             <a href="https://brain-tumor-detection-8yp3.onrender.com/" target="_blank" rel="noopener">Live ↗</a>
+            <a href="https://drive.google.com/file/d/1P72pWs6Z5F-8l6L75liqttO_Pdszl7nt/view?usp=sharing" target="_blank" rel="noopener">Demo ↗</a>
           </div>
         </article>
 
@@ -671,6 +674,7 @@
           <div class="proj-links">
             <a href="https://github.com/aziz-ashfak/Indian-Flight-Price-Prediction" target="_blank" rel="noopener">Code ↗</a>
             <a href="https://indian-flight-price-prediction.onrender.com/" target="_blank" rel="noopener">Live ↗</a>
+            <a href="https://drive.google.com/file/d/1PZ9P_3isKrBiDQObdkp2_2W33csF3Eu6/view?usp=sharing" target="_blank" rel="noopener">Demo ↗</a>
           </div>
         </article>
 
@@ -680,6 +684,29 @@
           <p>Built with FastAPI, LangChain and Hugging Face, using FAISS vector search and figure analysis.</p>
           <div class="proj-links">
             <a href="https://github.com/aziz-ashfak/QNARAG" target="_blank" rel="noopener">Code ↗</a>
+            <a href="https://qnarag.onrender.com/" target="_blank" rel="noopener">Live ↗</a>
+            <a href="https://drive.google.com/file/d/1G6Nj1lr-nfYYVdk4IjcV7d6_kn31bOAu/view?usp=sharing" target="_blank" rel="noopener">Demo ↗</a>
+          </div>
+        </article>
+        <article class="card proj-card reveal">
+          <h3>Thyroid Disease Prediction</h3>
+          <p class="sub">Clinical classification · ≈98.7% accuracy</p>
+          <p>A tuned Random Forest classifier with an end-to-end inference pipeline, served as a Flask app and deployed through GitHub Actions.</p>
+          <div class="proj-links">
+            <a href="https://github.com/aziz-ashfak/Thyroid-Disease-Prediction" target="_blank" rel="noopener">Code ↗</a>
+            <a href="https://thyroid-disease-prediction-yker.onrender.com/" target="_blank" rel="noopener">Live ↗</a>
+            <a href="https://drive.google.com/file/d/1lIAOOyIv3V8X4B-F-iPawzVqcOkI0AOa/view?usp=sharing" target="_blank" rel="noopener">Demo ↗</a>
+          </div>
+        </article>
+
+        <article class="card proj-card reveal">
+          <h3>Face Mask Detection</h3>
+          <p class="sub">Real-time object detection with YOLO</p>
+          <p>A real-time face mask detector trained on a Kaggle dataset, exported to ONNX and served through a Flask app.</p>
+          <div class="proj-links">
+            <a href="https://github.com/aziz-ashfak/Face-Mask-Detection" target="_blank" rel="noopener">Code ↗</a>
+            <a href="https://face-mask-detection.onrender.com/" target="_blank" rel="noopener">Live ↗</a>
+            <a href="https://drive.google.com/file/d/1STQNxY3LnA42vZn6pB8eS09cJqejd8QD/view?usp=sharing" target="_blank" rel="noopener">Demo ↗</a>
           </div>
         </article>
       </div>
